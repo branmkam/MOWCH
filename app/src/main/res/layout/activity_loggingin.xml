@@ -25,11 +25,11 @@
         android:layout_width="348dp"
         android:layout_height="55dp"
         android:layout_marginTop="32dp"
-        android:textSize="28dp"
-        android:fontFamily="@font/bryantproreg"
         android:background="@drawable/input_field"
+        android:fontFamily="@font/bryantproreg"
         android:hint="@string/prompt_email"
         android:textColorHint="@color/gray"
+        android:textSize="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,15 +55,15 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="26dp"
-        android:layout_height="26dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
         android:layout_marginTop="97dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435"
+        app:layout_constraintVertical_bias="0.434"
         app:srcCompat="@drawable/mail2" />
 
     <ImageView
@@ -75,7 +75,7 @@
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.161"
+        app:layout_constraintVertical_bias="0.17"
         app:srcCompat="@drawable/password" />
 
     <Button
@@ -114,6 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Don't have an account?"
+        android:textSize="20dp"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -127,6 +128,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Sign up"
+        android:textSize="24dp"
+        android:textAllCaps="false"
         android:textColor="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

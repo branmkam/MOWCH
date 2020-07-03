@@ -29,7 +29,7 @@ public class LogginginActivity extends AppCompatActivity {
         }
 
     private void opennewActivity() {
-        Intent intent = new Intent(this, ForgotPasswordActivity.class);
+        Intent intent = new Intent(this, ForgotPasswordLastActivity.class);
         startActivity(intent);
     }
 
