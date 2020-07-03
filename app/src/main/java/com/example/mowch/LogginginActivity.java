@@ -2,6 +2,7 @@ package com.example.mowch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,12 +22,16 @@ public class LogginginActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                opennewActivity();
             }
         });
 
         }
 
-
-
+    private void opennewActivity() {
+        Intent intent = new Intent(this, ForgotPasswordActivity.class);
+        startActivity(intent);
     }
+
+
+}
