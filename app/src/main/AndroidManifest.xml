@@ -15,8 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CodeActivity"></activity>
-        <activity android:name=".ForgotPasswordActivity"></activity>
+        <activity android:name=".ContactPageActivity"></activity>
+        <activity android:name=".CodeActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".LogginginActivity">
             <intent-filter>
