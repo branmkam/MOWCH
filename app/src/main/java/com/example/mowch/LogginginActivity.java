@@ -22,7 +22,7 @@ public class LogginginActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                opennewActivity();
+                opennewActivity2();
             }
         });
 
@@ -30,7 +30,7 @@ public class LogginginActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                opennewActivity2();
+                opennewActivity();
             }
         });
 
@@ -41,9 +41,10 @@ public class LogginginActivity extends AppCompatActivity {
         startActivity(intent);
     }
     private void opennewActivity2() {
-        Intent intent = new Intent(this, ContactPageActivity.class);
+        Intent intent = new Intent(this, NavigationDrawerActivity.class);
         startActivity(intent);
     }
+
 
 
 }
