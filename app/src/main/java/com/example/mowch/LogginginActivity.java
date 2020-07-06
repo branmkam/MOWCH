@@ -26,10 +26,22 @@ public class LogginginActivity extends AppCompatActivity {
             }
         });
 
+        signup = (Button) findViewById(R.id.loginfield);
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opennewActivity2();
+            }
+        });
+
         }
 
     private void opennewActivity() {
         Intent intent = new Intent(this, ForgotPasswordLastActivity.class);
+        startActivity(intent);
+    }
+    private void opennewActivity2() {
+        Intent intent = new Intent(this, ContactPageActivity.class);
         startActivity(intent);
     }
 
