@@ -5,26 +5,29 @@ import java.util.*;
 public class HeadAdmin extends Account implements AdminInterface {
 
     private ArrayList<Account> accounts;
-    private ArrayList<Driver> drivers;
+    private HashMap<Driver, Route> driverRouteHashMap;
     private ArrayList<Account> pending;
 
-    public HeadAdmin(String name, int number, String username, String email, String password) {
-        super(name, number, username, email, password);
+    public HeadAdmin(String name, String email, String password) {
+        super(name, email, password);
         this.accounts = new ArrayList<>();
         this.pending = new ArrayList<>();
+        driverRouteHashMap = new HashMap<>();
     }
 
-    public HeadAdmin(String name, int number, String username, String email, String password, ArrayList<Account> accounts) {
-            super(name, number, username, email, password);
+    public HeadAdmin(String name, String email, String password, ArrayList<Account> accounts) {
+            super(name, email, password);
         this.accounts = accounts;
         this.pending = new ArrayList<>();
+        driverRouteHashMap = new HashMap<>();
     }
 
-    public HeadAdmin(String name, int number, String username, String email, String password,
+    public HeadAdmin(String name, String email, String password,
                      ArrayList<Account> accounts, ArrayList<Account> pending) {
-        super(name, number, username, email, password);
+        super(name, email, password);
         this.accounts = accounts;
         this.pending = pending;
+        driverRouteHashMap = new HashMap<>();
     }
 
 
@@ -53,7 +56,7 @@ public class HeadAdmin extends Account implements AdminInterface {
 
     @Override
     public boolean notifyDrivers(String s) {
-        for (Driver d : drivers) {
+        for (Driver d : driverRouteHashMap.keySet()) {
             notifyDriver(d, s);
         }
         return true;
@@ -63,8 +66,7 @@ public class HeadAdmin extends Account implements AdminInterface {
     {
         if(accounts.contains(d))
         {
-            Admin ad = new Admin(d.getName(), d.getNumber(), d.getUsername(),
-                    d.getEmail(), d.getPassword(), drivers);
+            Admin ad = new Admin(d.getName(), d.getEmail(), d.getPassword());
             accounts.remove(d);
             accounts.add(ad);
             return true;
@@ -80,8 +82,7 @@ public class HeadAdmin extends Account implements AdminInterface {
         if(accounts.contains(ad) &&
                 ad.getClass().toString().equals("Admin") ||
                 ad.getClass().toString().equals("HeadAdmin")) {
-            Driver d = new Driver(ad.getName(), ad.getNumber(), ad.getUsername(),
-                    ad.getEmail(), ad.getPassword());
+            Driver d = new Driver(ad.getName(), ad.getEmail(), ad.getPassword());
             accounts.remove(ad);
             accounts.add(d);
             return true;
@@ -96,8 +97,7 @@ public class HeadAdmin extends Account implements AdminInterface {
     {
         if(pending.contains(acc))
         {
-            Driver d = new Driver(acc.getName(), acc.getNumber(), acc.getUsername(),
-                    acc.getEmail(), acc.getPassword());
+            Driver d = new Driver(acc.getName(), acc.getEmail(), acc.getPassword());
             accounts.add(d);
             pending.remove(acc);
             return true;

@@ -6,12 +6,12 @@ public class Admin extends Account implements AdminInterface  {
 
     ArrayList<Driver> drivers;
 
-    public Admin(String name, int number, String username, String email, String password) {
-        super(name, number, username, email, password);
+    public Admin(String name, String email, String password) {
+        super(name, email, password);
     }
 
-    public Admin(String name, int number, String username, String email, String password, ArrayList<Driver> drivers) {
-        super(name, number, username, email, password);
+    public Admin(String name, String email, String password, ArrayList<Driver> drivers) {
+        super(name, email, password);
         this.drivers = drivers;
     }
 
