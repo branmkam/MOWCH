@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NavigationDrawerActivity"
+    android:background="@color/main"
     android:id="@+id/maindrawer">
 
 
@@ -24,9 +25,16 @@
         android:id="@+id/navview"
         app:menu="@menu/old_drawer_info"
         app:headerLayout="@layout/headernav"
+        style="@style/report_emer"
         android:layout_gravity = "start"
         android:fitsSystemWindows="true"/>
-
+         <!--<Button
+             android:layout_width="149dp"
+             android:layout_height="25dp"
+             android:id="@+id/needs_help"
+             android:text="@string/report_emer"
+             android:textAppearance="@style/report_emer"
+             />-->
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

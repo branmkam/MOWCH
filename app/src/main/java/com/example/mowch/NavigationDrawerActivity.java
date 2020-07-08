@@ -10,7 +10,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.view.Display;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
@@ -69,25 +72,49 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.framlayout, new BlankFragment());
             fragmentTransaction.commit();
+            drawerLayout.closeDrawer(GravityCompat.START);
         }
         if(menuItem.getItemId() == R.id.nav_settings){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.framlayout, new BlankFragment());
             fragmentTransaction.commit();
+            drawerLayout.closeDrawer(GravityCompat.START);
         }
         if(menuItem.getItemId() == R.id.nav_contactAdmin){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.add(R.id.framlayout, new ContactFragment());
             fragmentTransaction.commit();
+            drawerLayout.closeDrawer(GravityCompat.START);
         }
         if(menuItem.getItemId() == R.id.nav_notif){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.framlayout, new BlankFragment());
             fragmentTransaction.commit();
+            drawerLayout.closeDrawer(GravityCompat.START);
         }
+
+        if(menuItem.getItemId() == R.id.nav_notif){
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.framlayout, new BlankFragment());
+            fragmentTransaction.commit();
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+
+        if(menuItem.getItemId() == R.id.nav_report){
+            Intent intent = new Intent(this, EmergencyPop.class);
+            startActivity(intent);
+        }
+
+        if(menuItem.getItemId() == R.id.nav_logout){
+            Intent intent = new Intent(this, LogginginActivity.class);
+            startActivity(intent);
+        }
+        /*TODO: log out here*/
+
         return true;
     }
 }

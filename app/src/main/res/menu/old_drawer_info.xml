@@ -17,5 +17,16 @@
     <item
         android:id="@+id/nav_notif"
         android:icon="@drawable/notif"
-        android:title="@string/menu_notifications" />
+        android:title="@string/menu_notifications"
+        />
+    <item
+        android:id="@+id/nav_report"
+        android:title="@string/report_emer"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/logout"
+        android:menuCategory="secondary"
+        android:title="Logout" />
 </menu>
