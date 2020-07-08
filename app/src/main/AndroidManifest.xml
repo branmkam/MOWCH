@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ContactPageActivity"></activity>
+        <activity android:name=".MapProceedActivity"></activity>
+        <activity android:name=".ContactPageActivity" />
         <activity android:name=".CodeActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".SignupActivity" />
