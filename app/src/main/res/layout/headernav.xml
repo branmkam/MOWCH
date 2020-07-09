@@ -14,14 +14,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="269dp"
-        android:layout_height="140dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="false"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="-10dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:src="@drawable/logowhite" />
@@ -32,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="60dp"
         android:text="@string/hello_"
         android:textAppearance="@style/hello_" />
 
@@ -42,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-10dp"
+        android:layout_marginBottom="-4dp"
         android:text="@string/username"
         android:textAppearance="@style/vivek_patel" />
 </RelativeLayout>

@@ -15,9 +15,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MapProceedActivity"></activity>
-        <activity android:name=".ContactPageActivity" />
-        <activity android:name=".CodeActivity" />
+        <activity android:name=".PausePop"></activity>
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar2"></activity>
+        <activity
+            android:name=".EmergencyPop"
+            android:theme="@style/AppTheme.CustomPop"></activity>
+        <activity android:name=".ForgotPasswordLastActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".LogginginActivity">
