@@ -52,4 +52,44 @@
         <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
 
+    <!--
+     Font family: Source Sans Pro
+     Line height: 23sp
+   -->
+    <!-- styles.xml -->
+    <style name="lorem_ipsum">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            @color/main
+        </item>
+
+    </style>
+    <style name="terms_and_c">
+
+        <item name="android:textSize">
+            32sp
+        </item>
+
+        <item name="android:textColor">
+            @color/main
+        </item>
+
+    </style>
+    <style name="cancel">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            @color/white
+        </item>
+
+
+
+    </style>
 </resources>
