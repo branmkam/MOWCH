@@ -11,6 +11,7 @@
         android:id="@+id/button5"
         android:layout_width="407dp"
         android:layout_height="116dp"
+        android:autoLink="phone|email"
         android:background="@drawable/input_field"
         android:gravity="center_horizontal"
         android:lineSpacingExtra="14sp"
@@ -37,8 +38,9 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="407dp"
-        android:layout_height="116dp"
+        android:layout_width="410dp"
+        android:layout_height="109dp"
+        android:autoLink="phone|email"
         android:background="@drawable/input_field"
         android:gravity="center_horizontal"
         android:lineSpacingExtra="14sp"
@@ -51,6 +53,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.549" />
+        app:layout_constraintVertical_bias="0.554" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,21 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/imagefour"
-        android:title="@string/menu_home" />
-    <item
-        android:id="@+id/nav_settings"
-        android:icon="@drawable/wind"
-        android:title="@string/menu_settings" />
-    <item
-        android:id="@+id/nav_contactAdmin"
-        android:icon="@drawable/phone_icon"
-        android:title="@string/menu_contactAdmin" />
+
+    <group>
+
+
+
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/imagefour"
+                android:title="@string/menu_home" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/wind"
+                android:title="@string/menu_settings" />
+            <item
+                android:id="@+id/nav_contactAdmin"
+                android:icon="@drawable/phone_icon"
+                android:title="@string/menu_contactAdmin" />
+
+            <item
+                android:id="@+id/nav_notif"
+                android:icon="@drawable/ic_baseline_notifications_24"
+                android:title="@string/menu_notifications" />
+
+
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_baseline_report_problem_24"
+            android:title="@string/report_emer" />
+
+
+
+
+    </group>
+
+<group >
 
     <item
-        android:id="@+id/nav_notif"
-        android:icon="@drawable/notif"
-        android:title="@string/menu_notifications" />
+        android:id="@+id/empty"
+        android:title=" "
+        android:enabled="false"
+        />
+
+
+    <item
+        android:id="@+id/nav_report2"
+        android:menuCategory="secondary"
+        android:enabled="false"
+        android:title=" " />
+
+    <item
+        android:id="@+id/nav_report3"
+        android:menuCategory="secondary"
+        android:enabled="false"
+        android:title=" " />
+
+    <item
+        android:id="@+id/nav_report4"
+        android:menuCategory="secondary"
+        android:enabled="false"
+        android:title=" " />
+
+    <item
+        android:id="@+id/nav_report5"
+        android:menuCategory="secondary"
+        android:enabled="false"
+        android:title=" " />
+
+
+    <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:menuCategory="secondary"
+            android:title="Logout" />
+
+</group>
+
+
+
+
+
+
 </menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rectangle_1"
+    android:layout_width="326dp"
+    android:layout_height="300dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    android:background="@drawable/rectanglepop"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/confirm_eme"
+        android:layout_width="247dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/confirm_eme"
+        android:textAppearance="@style/confirm_eme" />
+
+    <EditText
+        android:layout_width="247dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:gravity="top"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="79dp"
+        android:hint="Type Description to Notify Admin"
+        android:background="@drawable/input_field3" />
+
+    <Button
+        android:layout_width="247dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="229dp"
+        android:background="@drawable/notify"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Notify"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

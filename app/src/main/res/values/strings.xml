@@ -45,6 +45,10 @@
         Cancel
     </string>
 
+    <string name="report_emer">Report Emergency</string>
+    <string name="confirm_eme">Confirm Emergency</string>
+    <string name="you_have_pa">You have paused the route\n\nPress continue once you are ready</string>
+
 
 
 </resources>
