@@ -8,7 +8,7 @@ import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
 
-public class EmergencyPop extends Activity {
+public class instructions extends Activity {
 
 
     @Override

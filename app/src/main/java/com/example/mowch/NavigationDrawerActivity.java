@@ -10,11 +10,15 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
+import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -65,6 +69,20 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
 
     }
 
+
+
+
+    public void createPopup() {
+        final Dialog mydialog = new Dialog(NavigationDrawerActivity.this);
+        mydialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        mydialog.setContentView(R.layout.pop_emergency);
+        WindowManager.LayoutParams params = getWindow().getAttributes();
+        params.gravity = Gravity.CENTER;
+        params.x = -20;
+        params.y = 100;
+        getWindow().setAttributes(params);
+        mydialog.show();
+    }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         if(menuItem.getItemId() == R.id.nav_home){
@@ -107,6 +125,7 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
         if(menuItem.getItemId() == R.id.nav_report){
             Intent intent = new Intent(this, EmergencyPop.class);
             startActivity(intent);
+            /*createPopup();*/
         }
 
         if(menuItem.getItemId() == R.id.nav_logout){

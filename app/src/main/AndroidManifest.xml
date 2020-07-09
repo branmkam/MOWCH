@@ -18,7 +18,14 @@
         <activity android:name=".PausePop"></activity>
         <activity
             android:name=".NavigationDrawerActivity"
-            android:theme="@style/AppTheme.NoActionBar2"></activity>
+            android:theme="@style/AppTheme.NoActionBar2">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".EmergencyPop"
             android:theme="@style/AppTheme.CustomPop"></activity>
@@ -26,11 +33,6 @@
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".LogginginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.login.LoginActivity"

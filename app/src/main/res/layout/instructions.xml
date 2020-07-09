@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="411dp"
+    android:layout_height="460dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rectanglepop"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="12dp">
+
+
+    <TextView
+        android:layout_width="374dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/sspsemibold"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Instructions for Route"
+        android:textAlignment="center"
+        android:textColor="@color/lightblue"
+        android:textSize="35sp"></TextView>
+
+    <RelativeLayout
+        android:layout_width="399dp"
+        android:layout_height="372dp"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="399dp"
+            android:layout_height="372dp"
+            ></ScrollView>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@android:layout/list_content"
+            tools:listfooter="@android:layout/test_list_item"
+
+            ></ListView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
