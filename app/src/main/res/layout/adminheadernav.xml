@@ -31,7 +31,7 @@
         android:fontFamily="@font/sspitalic"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="55dp"
-        android:text="@string/hello_"
+        android:text="@string/admin"
         android:textAppearance="@style/hello_" />
 
     <TextView

@@ -1,7 +1,6 @@
 package com.example.mowch;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -13,8 +12,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.view.Display;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.Window;
@@ -22,7 +19,7 @@ import android.view.WindowManager;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class NavigationDrawerActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class UserNavigationDrawerActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
     Toolbar toolbar;
@@ -73,7 +70,7 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Navig
 
 
     public void createPopup() {
-        final Dialog mydialog = new Dialog(NavigationDrawerActivity.this);
+        final Dialog mydialog = new Dialog(UserNavigationDrawerActivity.this);
         mydialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         mydialog.setContentView(R.layout.pop_emergency);
         WindowManager.LayoutParams params = getWindow().getAttributes();

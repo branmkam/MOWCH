@@ -3,9 +3,6 @@
 
 
     <group>
-
-
-
             <item
                 android:id="@+id/nav_home"
                 android:icon="@drawable/imagefour"
@@ -62,11 +59,6 @@
         android:enabled="false"
         android:title=" " />
 
-    <item
-        android:id="@+id/nav_report5"
-        android:menuCategory="secondary"
-        android:enabled="false"
-        android:title=" " />
 
 
     <item

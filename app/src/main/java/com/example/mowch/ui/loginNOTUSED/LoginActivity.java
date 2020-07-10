@@ -1,4 +1,4 @@
-package com.example.mowch.ui.login;
+package com.example.mowch.ui.loginNOTUSED;
 
 import android.app.Activity;
 
@@ -23,8 +23,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mowch.R;
-import com.example.mowch.ui.login.LoginViewModel;
-import com.example.mowch.ui.login.LoginViewModelFactory;
 
 public class LoginActivity extends AppCompatActivity {
 

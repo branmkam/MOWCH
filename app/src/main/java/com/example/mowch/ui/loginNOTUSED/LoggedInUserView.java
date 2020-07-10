@@ -1,4 +1,4 @@
-package com.example.mowch.ui.login;
+package com.example.mowch.ui.loginNOTUSED;
 
 /**
  * Class exposing authenticated user details to the UI.

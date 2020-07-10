@@ -22,9 +22,12 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="hello_">Hello!</string>
+    <string name="admin">Admin</string>
     <string name="username">FIRST LAST</string>
-    <string name="menu_home">My Routes</string>
+    <string name="menu_home">My Route</string>
     <string name="menu_settings">Settings</string>
+    <string name="admenu_routes">All Routes</string>
+    <string name="admenu_drivers">All Drivers</string>
     <string name="menu_contactAdmin">Contact Admin</string>
     <string name="menu_notifications">Notifications</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -48,7 +51,6 @@
     <string name="report_emer">Report Emergency</string>
     <string name="confirm_eme">Confirm Emergency</string>
     <string name="you_have_pa">You have paused the route\n\nPress continue once you are ready</string>
-
 
 
 </resources>

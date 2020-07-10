@@ -15,10 +15,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PausePop"></activity>
+        <activity android:name=".AdminNavigationActivityActivity">
+        </activity>
+        <activity android:name=".PausePop" />
         <activity
-            android:name=".NavigationDrawerActivity"
+            android:name=".UserNavigationDrawerActivity"
             android:theme="@style/AppTheme.NoActionBar2">
+        </activity>
+        <activity
+            android:name=".EmergencyPop"
+            android:theme="@style/AppTheme.CustomPop" />
+        <activity android:name=".ForgotPasswordLastActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LogginginActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,15 +37,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EmergencyPop"
-            android:theme="@style/AppTheme.CustomPop"></activity>
-        <activity android:name=".ForgotPasswordLastActivity" />
-        <activity android:name=".ForgotPasswordActivity" />
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".LogginginActivity">
-        </activity>
-        <activity
-            android:name=".ui.login.LoginActivity"
+            android:name=".ui.loginNOTUSED.LoginActivity"
             android:label="@string/title_activity_login" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
