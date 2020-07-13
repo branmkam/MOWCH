@@ -133,4 +133,10 @@ public class UserNavigationDrawerActivity extends AppCompatActivity implements N
 
         return true;
     }
+
+
+    public void openDrawer(){
+        drawerLayout.openDrawer(drawerLayout);
+    }
+
 }

@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.navigation.NavigationView;
+
 public class LogginginActivity extends AppCompatActivity {
 
     Button signup;
@@ -22,7 +24,7 @@ public class LogginginActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openForgotPasswordActivity();
+                openSignUpActivity();
             }
         });
 
@@ -38,25 +40,26 @@ public class LogginginActivity extends AppCompatActivity {
         forgotpassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openSignUpActivity();
+                openForgotPasswordActivity();;
             }
         });
 
 
         }
+    private void openForgotPasswordActivity(){
+        Intent intent = new Intent(this, ForgotPasswordActivity.class);
+        startActivity(intent);
+    }
 
     private void openSignUpActivity() {
         Intent intent = new Intent(this, SignupActivity.class);
         startActivity(intent);
     }
     private void openStartScreenActivity() {
-        Intent intent = new Intent(this, StartScreenActivity.class);
+        Intent intent = new Intent(this, UserNavigationDrawerActivity.class);
         startActivity(intent);
     }
-    private void openForgotPasswordActivity(){
-        Intent intent = new Intent(this, ForgotPasswordActivity.class);
-        startActivity(intent);
-    }
+
 
 
 

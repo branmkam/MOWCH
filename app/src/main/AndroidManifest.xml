@@ -21,13 +21,19 @@
         <activity
             android:name=".UserNavigationDrawerActivity"
             android:theme="@style/AppTheme.NoActionBar2">
+
+
         </activity>
         <activity
             android:name=".EmergencyPop"
             android:theme="@style/AppTheme.CustomPop" />
+        <activity android:name=".StartScreenActivity"/>
+        <activity android:name=".SignupActivity">
+
+        </activity>
         <activity android:name=".ForgotPasswordLastActivity" />
         <activity android:name=".ForgotPasswordActivity" />
-        <activity android:name=".SignupActivity" />
+
         <activity android:name=".LogginginActivity">
 
             <intent-filter>
@@ -35,6 +41,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
         <activity
             android:name=".ui.loginNOTUSED.LoginActivity"

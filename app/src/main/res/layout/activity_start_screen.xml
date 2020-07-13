@@ -153,12 +153,13 @@
         app:layout_constraintVertical_bias="0.521" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/navigation"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="54dp"
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginBottom="664dp"
+        android:layout_marginBottom="700dp"
         android:background="@android:drawable/btn_default"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -174,7 +175,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.027"
+        app:layout_constraintVertical_bias="0.07"
         app:srcCompat="@drawable/logonowords" />
 
     <Button
