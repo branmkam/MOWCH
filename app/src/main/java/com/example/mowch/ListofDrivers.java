@@ -31,9 +31,9 @@ public class ListofDrivers extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_listof_drivers, container, false);
 
         ArrayList<ExampleDriver> exampleList = new ArrayList<>();
-        exampleList.add(new ExampleDriver(R.drawable.ic_outline_person_24, "John Smith"));
-        exampleList.add(new ExampleDriver(R.drawable.ic_outline_person_24,"Rachel Bearman"));
-        exampleList.add(new ExampleDriver(R.drawable.ic_outline_person_24,"Vivek Patel"));
+        exampleList.add(new ExampleDriver(R.drawable.user2, "John Smith"));
+        exampleList.add(new ExampleDriver(R.drawable.user2,"Rachel Bearman"));
+        exampleList.add(new ExampleDriver(R.drawable.user2,"Vivek Patel"));
 
         mrecyclerView = view.findViewById(R.id.recycler_view);
         mrecyclerView.setHasFixedSize(false);

@@ -37,10 +37,10 @@ public class AdminNavigationActivityActivity extends AppCompatActivity implement
         setContentView(R.layout.activity_admin_navigation_activity);
 
         toolbar = findViewById(R.id.toolbar);
-        toolbar.setLogo(R.drawable.logocropped);
+        /*toolbar.setLogo(R.drawable.logocropped);
 
         toolbar.setNavigationIcon(R.drawable.ic_baseline_menu_24);
-
+*/
 
         setSupportActionBar(toolbar);
         drawerLayout = findViewById(R.id.maindrawer2);
@@ -107,7 +107,7 @@ public class AdminNavigationActivityActivity extends AppCompatActivity implement
         if(menuItem.getItemId() == R.id.nav_home){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.add(R.id.framlayout, new ContactFragment());
+            fragmentTransaction.replace(R.id.framlayout, new ContactFragment());
             fragmentTransaction.commit();
             drawerLayout.closeDrawer(GravityCompat.START);
         }

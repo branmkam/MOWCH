@@ -31,6 +31,7 @@
         android:id="@+id/imageView11"
         android:layout_width="410dp"
         android:layout_height="294dp"
+        android:layout_marginTop="?attr/actionBarSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

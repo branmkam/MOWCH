@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginBottom="18dp"
-    app:cardCornerRadius="25dp">
+    app:cardCornerRadius="50dp">
 
 
     <RelativeLayout
@@ -16,7 +16,8 @@
             android:id="@+id/route_icon"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="18dp"
             />
         
         <TextView
@@ -29,8 +30,70 @@
             android:text=""
             android:gravity="center"
             />
-        
-        
+
+        <ImageButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/sendMessage"
+            android:layout_marginLeft="317dp"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/ic_outline_chat_24" />
+
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:id="@+id/sub_item"
+            android:layout_width="398dp"
+            android:gravity="center"
+            android:layout_height="205dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/route_info"
+                android:layout_width="398dp"
+                android:layout_height="140dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <ImageButton
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/remove_button"
+                    android:layout_width="40dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_marginLeft="18dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_outline_remove_circle_outline_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/sspsemibold"
+                    android:textSize="22sp"
+
+                    android:layout_height="wrap_content"
+                    android:text="Route 1"
+                    android:id="@+id/route_name_current" />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="189dp"
+                android:layout_height="60dp"
+                android:background="@drawable/assign"
+                android:text="Assign new route"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:fontFamily="@font/sspsemibold"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+
     </RelativeLayout>
 
 
