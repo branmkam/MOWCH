@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
@@ -18,6 +19,8 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.google.android.material.navigation.NavigationView;
+
+import java.util.Objects;
 
 public class AdminNavigationActivityActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     DrawerLayout drawerLayout;
@@ -34,6 +37,11 @@ public class AdminNavigationActivityActivity extends AppCompatActivity implement
         setContentView(R.layout.activity_admin_navigation_activity);
 
         toolbar = findViewById(R.id.toolbar);
+        toolbar.setLogo(R.drawable.logocropped);
+
+        toolbar.setNavigationIcon(R.drawable.ic_baseline_menu_24);
+
+
         setSupportActionBar(toolbar);
         drawerLayout = findViewById(R.id.maindrawer2);
         navigationView = findViewById(R.id.navview2);
@@ -92,7 +100,7 @@ public class AdminNavigationActivityActivity extends AppCompatActivity implement
         if(menuItem.getItemId() == R.id.nav_alldrivers){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.framlayout, new BlankFragment());
+            fragmentTransaction.replace(R.id.framlayout, new ListofDrivers());
             fragmentTransaction.commit();
             drawerLayout.closeDrawer(GravityCompat.START);
         }

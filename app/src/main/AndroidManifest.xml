@@ -17,6 +17,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".AdminNavigationActivityActivity">
         </activity>
+        <activity android:name=".AgreementsActivity">
+
+        </activity>
         <activity android:name=".PausePop" />
         <activity
             android:name=".UserNavigationDrawerActivity"

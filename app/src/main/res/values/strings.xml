@@ -39,7 +39,7 @@
     <string name="close">close</string>
     <string name="lorem_ipsum">
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque vitae tempus quam pellentesque nec nam. Integer eget aliquet nibh praesent tristique magna sit. Lacinia quis vel eros donec ac odio tempor. Ultrices eros in cursus turpis massa tincidunt dui ut. Vel eros donec ac odio tempor. Pretium viverra suspendisse potenti nullam ac tortor. Aliquet nec ullamcorper sit amet risus nullam eget. Sociis natoque penatibus et magnis dis.
+        Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque vitae tempus quam pellentesque nec nam. Integer eget aliquet nibh praesent tristique magna sit. Lacinia quis vel eros donec ac odio tempor. Ultrices eros in cursus turpis massa tincidunt dui ut. Vel eros donec ac odio tempor. Pretium viverra suspendisse potenti nullam ac tortor. Aliquet nec ullamcorper sit amet risus nullam eget. Sociis natoque penatibus et magnis dis. adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque vitae tempus quam pellentesque nec nam. Integer eget aliquet nibh praesent tristique magna sit. Lacinia quis vel eros donec ac odio tempor. Ultrices eros in cursus turpis massa tincidunt dui ut. Vel eros donec ac odio tempor. Pretium viverra suspendisse potenti nullam ac tortor. Aliquet nec ullamcorper sit amet risus nullam eget. Sociis natoque penatibus et magnis dis. adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque vitae tempus quam pellentesque nec nam. Integer eget aliquet nibh praesent tristique magna sit. Lacinia quis vel eros donec ac odio tempor. Ultrices eros in cursus turpis massa tincidunt dui ut. Vel eros donec ac odio tempor. Pretium viverra suspendisse potenti nullam ac tortor. Aliquet nec ullamcorper sit amet risus nullam eget. Sociis natoque penatibus et magnis dis.
     </string>
 
 
@@ -50,6 +50,7 @@
 
     <string name="report_emer">Report Emergency</string>
     <string name="confirm_eme">Confirm Emergency</string>
+    <string name="driver_name">John Smith</string>
     <string name="you_have_pa">You have paused the route\n\nPress continue once you are ready</string>
 
 

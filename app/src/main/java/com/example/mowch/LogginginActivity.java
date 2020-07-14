@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -56,7 +57,7 @@ public class LogginginActivity extends AppCompatActivity {
         startActivity(intent);
     }
     private void openStartScreenActivity() {
-        Intent intent = new Intent(this, UserNavigationDrawerActivity.class);
+        Intent intent = new Intent(this, AdminNavigationActivityActivity.class);
         startActivity(intent);
     }
 

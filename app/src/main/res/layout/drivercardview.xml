@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="18dp"
+    app:cardCornerRadius="25dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+        
+        <ImageView
+            android:id="@+id/route_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            />
+        
+        <TextView
+            android:id="@+id/driver"
+            android:layout_width="398dp"
+            android:layout_height="84dp"
+            android:textSize="23sp"
+            android:textColor="@color/lightblue"
+            android:fontFamily="@font/sspbold"
+            android:text=""
+            android:gravity="center"
+            />
+        
+        
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
