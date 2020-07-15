@@ -49,8 +49,6 @@ public class ListofRoutes extends Fragment {
         mrecyclerView.setLayoutManager(layoutManager);
         mrecyclerView.setAdapter(mAdapter);
 
-        ImageButton infoButton = view.findViewById(R.id.infobutton);
-
         return view;
     }
 }

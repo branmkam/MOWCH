@@ -1,8 +1,12 @@
 package com.example.mowch;
 
+import android.content.Intent;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -18,11 +22,19 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
 
         public ImageView imageView;
         public TextView textView;
+        public ImageButton infoButton;
+        public Button removeDriver;
+        public Button assignDriver;
+
 
         public RouteViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.route_icon);
             textView = itemView.findViewById(R.id.driver2);
+            infoButton = itemView.findViewById(R.id.infobutton);
+            removeDriver = itemView.findViewById(R.id.remove_button2);
+            assignDriver = itemView.findViewById(R.id.assign_driver);
+
         }
 
         public void bind(ExampleDriver driver) {
@@ -59,7 +71,26 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
         ExampleDriver currentItem = mExampleRoute.get(position);
         holder.imageView.setImageResource(currentItem.getImageResource());   // setting icon
         holder.textView.setText(currentItem.getDriverName());  // setting name
+        holder.infoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO: put popup of info here
+            }
+        });
 
+        holder.removeDriver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO: remove the driver assigned
+            }
+        });
+
+        holder.assignDriver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO: pull up list of drivers
+            }
+        });
 
         holder.itemView.setOnClickListener(v -> {
             // Get the current state of the item

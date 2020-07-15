@@ -82,6 +82,7 @@
             <Button
                 android:layout_width="189dp"
                 android:layout_height="60dp"
+                android:id="@+id/assign_driver"
                 android:background="@drawable/assign"
                 android:text="Assign new driver"
                 android:textAllCaps="false"
