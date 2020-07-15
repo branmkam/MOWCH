@@ -1,65 +1,62 @@
 package com.example.mowch;
 
-import android.app.MediaRouteButton;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.transition.TransitionManager;
-
 import java.util.ArrayList;
 
-public class DriverAdapter extends RecyclerView.Adapter<DriverAdapter.DriverViewHolder> {
-    private ArrayList<ExampleDriver> mExampleDriver;
+public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHolder>{
+    
+    private ArrayList<ExampleDriver> mExampleRoute; // ExampleDriver can be used
 
     int mExpandedPosition = -1;
-    public static class DriverViewHolder extends RecyclerView.ViewHolder {
+    public static class RouteViewHolder extends RecyclerView.ViewHolder {
 
         public ImageView imageView;
         public TextView textView;
 
-        public DriverViewHolder(@NonNull View itemView) {
+        public RouteViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.route_icon);
-            textView = itemView.findViewById(R.id.driver);
+            textView = itemView.findViewById(R.id.driver2);
         }
 
         public void bind(ExampleDriver driver) {
             boolean expanded = driver.isExpanded();
             // Set the visibility based on state
 
-            View button2 = itemView.findViewById(R.id.sendMessage);
+            View button2 = itemView.findViewById(R.id.infobutton);
             if(expanded) {
-                button2.setVisibility(View.VISIBLE);
+                button2.setVisibility(View.VISIBLE); // make it appear when it is clicked on
             }
             if(!expanded) {
-                button2.setVisibility(View.GONE);
+                button2.setVisibility(View.GONE); // make it disappear when it is closed out
             }
-            View subItem = itemView.findViewById(R.id.sub_item);
+            View subItem = itemView.findViewById(R.id.sub_item2);
             subItem.setVisibility(expanded ? View.VISIBLE : View.GONE);
 
         }
     }
 
-    public DriverAdapter(ArrayList<ExampleDriver> exampleDriver){
-        mExampleDriver = exampleDriver;
+    public RouteAdapter(ArrayList<ExampleDriver> exampleDriver){
+        mExampleRoute = exampleDriver;
     }
     @NonNull
     @Override
-    public DriverViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.drivercardview, parent, false);
-        DriverViewHolder evh = new DriverViewHolder(v);
+    public RouteViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.routecardview, parent, false);
+        RouteAdapter.RouteViewHolder evh = new RouteAdapter.RouteViewHolder(v);
         return evh;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull DriverViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RouteAdapter.RouteViewHolder holder, int position) {
 
-        ExampleDriver currentItem = mExampleDriver.get(position);
+        ExampleDriver currentItem = mExampleRoute.get(position);
         holder.imageView.setImageResource(currentItem.getImageResource());   // setting icon
         holder.textView.setText(currentItem.getDriverName());  // setting name
 
@@ -94,7 +91,7 @@ public class DriverAdapter extends RecyclerView.Adapter<DriverAdapter.DriverView
 
     @Override
     public int getItemCount() {
-        return mExampleDriver.size();
+        return mExampleRoute.size();
     }
 
 }

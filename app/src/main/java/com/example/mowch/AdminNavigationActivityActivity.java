@@ -93,7 +93,7 @@ public class AdminNavigationActivityActivity extends AppCompatActivity implement
         if(menuItem.getItemId() == R.id.nav_allroutes){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.framlayout, new BlankFragment());
+            fragmentTransaction.replace(R.id.framlayout, new ListofRoutes());
             fragmentTransaction.commit();
             drawerLayout.closeDrawer(GravityCompat.START);
         }
