@@ -15,20 +15,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DriversPopActivity"
-            android:theme="@style/AppTheme.CustomPop">
-        </activity>
-        <activity android:name=".AdminNavigationActivityActivity"></activity>
-        <activity android:name=".AgreementsActivity"></activity>
+        <activity android:name=".RoutePopActivity"></activity>
+        <activity
+            android:name=".DriversPopActivity"
+            android:theme="@style/AppTheme.CustomPop"></activity>
+        <activity android:name=".AdminNavigationActivityActivity" />
+        <activity android:name=".AgreementsActivity" />
         <activity android:name=".PausePop" />
         <activity
             android:name=".UserNavigationDrawerActivity"
-            android:theme="@style/AppTheme.NoActionBar2"></activity>
+            android:theme="@style/AppTheme.NoActionBar2" />
         <activity
             android:name=".EmergencyPop"
             android:theme="@style/AppTheme.CustomPop" />
         <activity android:name=".StartScreenActivity" />
-        <activity android:name=".SignupActivity"></activity>
+        <activity android:name=".SignupActivity" />
         <activity android:name=".ForgotPasswordLastActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".LogginginActivity">

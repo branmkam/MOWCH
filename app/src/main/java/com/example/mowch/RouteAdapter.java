@@ -127,4 +127,6 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
         return mExampleRoute.size();
     }
 
+
+
 }

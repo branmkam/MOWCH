@@ -30,8 +30,8 @@ public class DriverPopAdapter extends RecyclerView.Adapter<DriverPopAdapter.Driv
 
         public void bind(ExampleDriver driver) {
             boolean expanded = driver.isExpanded();
-            // Set the visibility based on state
 
+            // Set the visibility based on state
 
         }
     }
@@ -56,6 +56,7 @@ public class DriverPopAdapter extends RecyclerView.Adapter<DriverPopAdapter.Driv
 
 
         holder.itemView.setOnClickListener(v -> {
+
             // Get the current state of the item
             boolean expanded = currentItem.isExpanded();
             // Change the state

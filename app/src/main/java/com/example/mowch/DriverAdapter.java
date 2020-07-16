@@ -1,15 +1,17 @@
 package com.example.mowch;
 
-import android.app.MediaRouteButton;
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.transition.TransitionManager;
 
 import java.util.ArrayList;
 
@@ -21,11 +23,17 @@ public class DriverAdapter extends RecyclerView.Adapter<DriverAdapter.DriverView
 
         public ImageView imageView;
         public TextView textView;
+        public ImageButton sendButton;
+        public ImageButton removeRoute;
+        public Button assignRoute;
 
         public DriverViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.route_icon);
             textView = itemView.findViewById(R.id.driver);
+            sendButton = itemView.findViewById(R.id.sendMessage);
+            removeRoute = itemView.findViewById(R.id.remove_button);
+            assignRoute = itemView.findViewById(R.id.assign_route);
         }
 
         public void bind(ExampleDriver driver) {
@@ -62,6 +70,28 @@ public class DriverAdapter extends RecyclerView.Adapter<DriverAdapter.DriverView
         ExampleDriver currentItem = mExampleDriver.get(position);
         holder.imageView.setImageResource(currentItem.getImageResource());   // setting icon
         holder.textView.setText(currentItem.getDriverName());  // setting name
+        holder.sendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        holder.removeRoute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO: remove the route assigned
+            }
+        });
+
+        holder.assignRoute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context h = v.getContext();
+                Intent intent = new Intent(h, RoutePopActivity.class);
+                h.startActivity(intent);
+            }
+        });
 
 
         holder.itemView.setOnClickListener(v -> {
