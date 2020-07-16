@@ -1,5 +1,6 @@
 package com.example.mowch;
 
+import android.content.Context;
 import android.content.Intent;
 import android.media.Image;
 import android.view.LayoutInflater;
@@ -23,7 +24,7 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
         public ImageView imageView;
         public TextView textView;
         public ImageButton infoButton;
-        public Button removeDriver;
+        public ImageButton removeDriver;
         public Button assignDriver;
 
 
@@ -34,7 +35,6 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
             infoButton = itemView.findViewById(R.id.infobutton);
             removeDriver = itemView.findViewById(R.id.remove_button2);
             assignDriver = itemView.findViewById(R.id.assign_driver);
-
         }
 
         public void bind(ExampleDriver driver) {
@@ -74,7 +74,7 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
         holder.infoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: put popup of info here
+
             }
         });
 
@@ -88,7 +88,9 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
         holder.assignDriver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: pull up list of drivers
+                Context h = v.getContext();
+                Intent intent = new Intent(h, DriversPopActivity.class);
+                h.startActivity(intent);
             }
         });
 

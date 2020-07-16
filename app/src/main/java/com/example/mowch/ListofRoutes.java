@@ -15,11 +15,7 @@ import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ListofRoutes#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class ListofRoutes extends Fragment {
 
     private RecyclerView mrecyclerView;
