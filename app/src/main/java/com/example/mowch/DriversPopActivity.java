@@ -28,7 +28,7 @@ public class DriversPopActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drivers_pop);
 
-        ArrayList<ExampleDriver> exampleList = new ArrayList<>();
+        /*ArrayList<ExampleDriver> exampleList = new ArrayList<>();
         exampleList.add(new ExampleDriver(R.drawable.user2, "John Smith"));
         exampleList.add(new ExampleDriver(R.drawable.user2,"Rachel Bearman"));
         exampleList.add(new ExampleDriver(R.drawable.user2,"Vivek Patel"));
@@ -41,7 +41,7 @@ public class DriversPopActivity extends AppCompatActivity {
         exampleList.add(new ExampleDriver(R.drawable.user2, "John Smith"));
         exampleList.add(new ExampleDriver(R.drawable.user2,"Rachel Bearman"));
         exampleList.add(new ExampleDriver(R.drawable.user2,"Vivek Patel"));
-
+*/
 
 
         AlertDialog.Builder builderSingle = new AlertDialog.Builder(DriversPopActivity.this, R.style.AppTheme_Transparent);
@@ -49,6 +49,7 @@ public class DriversPopActivity extends AppCompatActivity {
         builderSingle.setTitle("Select Driver:");
 
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(DriversPopActivity.this, android.R.layout.select_dialog_item);
+        // all routes here
         arrayAdapter.add("Vivek");
         arrayAdapter.add("John");
         arrayAdapter.add("Rachel");
@@ -79,7 +80,7 @@ public class DriversPopActivity extends AppCompatActivity {
 
         AlertDialog alertDialog = builderSingle.create();
 
-        DisplayMetrics displayMetrics = new DisplayMetrics();
+       DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 
         int width = displayMetrics.widthPixels;

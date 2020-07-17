@@ -74,14 +74,18 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
         holder.infoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Context h = v.getContext();
+                Intent intent = new Intent(h, RouteInstructionsActivity.class);
+                h.startActivity(intent);
             }
         });
 
         holder.removeDriver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO: remove the driver assigned
+                /*Context h = v.getContext();
+                Intent intent = new Intent(h, EmergencyPop.class);
+                h.startActivity(intent);*/
             }
         });
 

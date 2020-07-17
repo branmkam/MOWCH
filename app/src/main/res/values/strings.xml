@@ -47,7 +47,8 @@
 
         Cancel
     </string>
-
+    <string name="routeNameSelected">Route A</string>
+    <string name="milesSelected">20 miles</string>
     <string name="report_emer">Report Emergency</string>
     <string name="confirm_eme">Confirm Emergency</string>
     <string name="driver_name">John Smith</string>
