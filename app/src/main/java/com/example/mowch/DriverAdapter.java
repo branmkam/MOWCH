@@ -73,7 +73,9 @@ public class DriverAdapter extends RecyclerView.Adapter<DriverAdapter.DriverView
         holder.sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Context h = v.getContext();
+                Intent intent = new Intent(h, NotifyingDriverActivity.class);
+                h.startActivity(intent);
             }
         });
 
