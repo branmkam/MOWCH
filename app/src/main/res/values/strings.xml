@@ -53,6 +53,7 @@
     <string name="confirm_eme">Confirm Emergency</string>
     <string name="driver_name">John Smith</string>
     <string name="you_have_pa">You have paused the route\n\nPress continue once you are ready</string>
+    <string name="sample_address">123 H Street\nCarrboro, NC\n27232</string>
 
 
 </resources>
