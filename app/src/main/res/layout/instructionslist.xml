@@ -25,8 +25,10 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
                 android:paddingTop="10dp"
+                android:textSize="19sp"
+                android:fontFamily="@font/sspboldital"
                 android:text="go to the back"
-                android:textColor="@color/main"
+                android:textColor="@color/black"
                 android:paddingBottom="10dp" />
 
 
