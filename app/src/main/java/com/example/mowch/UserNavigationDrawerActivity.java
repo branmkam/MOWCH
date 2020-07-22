@@ -49,10 +49,11 @@ public class UserNavigationDrawerActivity extends AppCompatActivity implements N
         actionBarDrawerToggle.syncState();
 
 
-        /*fragmentManager = getSupportFragmentManager();
+        fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.framlayout, new ContactFragment());
-        fragmentTransaction.commit();*/
+        fragmentTransaction.add(R.id.framlayout, new StartScreen2());
+        fragmentTransaction.commit();
+
 
     }
 
@@ -85,7 +86,7 @@ public class UserNavigationDrawerActivity extends AppCompatActivity implements N
         if(menuItem.getItemId() == R.id.nav_home){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.framlayout, new BlankFragment());
+            fragmentTransaction.replace(R.id.framlayout, new StartScreen2());
             fragmentTransaction.commit();
             drawerLayout.closeDrawer(GravityCompat.START);
         }
@@ -111,13 +112,6 @@ public class UserNavigationDrawerActivity extends AppCompatActivity implements N
             drawerLayout.closeDrawer(GravityCompat.START);
         }
 
-        if(menuItem.getItemId() == R.id.nav_notif){
-            fragmentManager = getSupportFragmentManager();
-            fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.framlayout, new BlankFragment());
-            fragmentTransaction.commit();
-            drawerLayout.closeDrawer(GravityCompat.START);
-        }
 
         if(menuItem.getItemId() == R.id.nav_report){
             Intent intent = new Intent(this, EmergencyPop.class);

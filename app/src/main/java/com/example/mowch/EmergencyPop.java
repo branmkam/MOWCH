@@ -2,13 +2,19 @@ package com.example.mowch;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class EmergencyPop extends Activity {
+public class EmergencyPop extends AppCompatActivity {
 
 
     @Override
@@ -23,12 +29,13 @@ public class EmergencyPop extends Activity {
         int width = displayMetrics.widthPixels;
         int height = displayMetrics.heightPixels;
 
-        getWindow().setLayout((int) (width*.8), (int) (height*.38));
+        getWindow().setLayout((int) (width*.79), (int) (height*.38));
         WindowManager.LayoutParams params = getWindow().getAttributes();
         params.gravity = Gravity.CENTER;
         params.x = -100;
         params.y = -60;
         getWindow().setAttributes(params);
+
     }
 
     @Override

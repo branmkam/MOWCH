@@ -191,20 +191,20 @@
         app:layout_constraintVertical_bias="0.412" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="315dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:background="@drawable/startrectangle"
-        android:text="Start"
-        android:textColor="@color/white"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.218" />
+    android:id="@+id/button7"
+    android:layout_width="315dp"
+    android:layout_height="94dp"
+    android:layout_marginStart="48dp"
+    android:layout_marginLeft="48dp"
+    android:background="@drawable/startrectangle"
+    android:text="Start"
+    android:textColor="@color/white"
+    android:textSize="35sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.218" />
 
     <EditText
         android:id="@+id/editTextTextPostalAddress"

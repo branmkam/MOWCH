@@ -9,7 +9,6 @@ public class ExampleDriver {
     public ExampleDriver(int imageResource, String driverName) {
         this.imageResource = imageResource;
         this.driverName = driverName;
-
     }
 
     public int getImageResource() {

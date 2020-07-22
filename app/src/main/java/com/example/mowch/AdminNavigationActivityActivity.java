@@ -57,10 +57,10 @@ public class AdminNavigationActivityActivity extends AppCompatActivity implement
         actionBarDrawerToggle.syncState();
 
 
-        /*fragmentManager = getSupportFragmentManager();
+        fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.framlayout, new ContactFragment());
-        fragmentTransaction.commit();*/
+        fragmentTransaction.add(R.id.framlayout, new StartScreen2());
+        fragmentTransaction.commit();
 
     }
 
@@ -107,7 +107,7 @@ public class AdminNavigationActivityActivity extends AppCompatActivity implement
         if(menuItem.getItemId() == R.id.nav_home){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.framlayout, new ContactFragment());
+            fragmentTransaction.replace(R.id.framlayout, new StartScreen2());
             fragmentTransaction.commit();
             drawerLayout.closeDrawer(GravityCompat.START);
         }

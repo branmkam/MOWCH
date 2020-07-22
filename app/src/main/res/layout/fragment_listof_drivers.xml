@@ -7,11 +7,11 @@
     tools:context=".ListofDrivers">
     
     
-    <ImageView
+    <!--<ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:foregroundGravity="center"
-        android:src="@drawable/logocropped" />
+        android:src="@drawable/logocropped" />-->
 
 
     <androidx.recyclerview.widget.RecyclerView
