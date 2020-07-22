@@ -53,10 +53,6 @@
     <string name="confirm_eme">Confirm Emergency</string>
     <string name="driver_name">John Smith</string>
     <string name="you_have_pa">You have paused the route\n\nPress continue once you are ready</string>
-    <string name="hint">hint</string>
-    <string name="type_here">Type here.</string>
-    <string name ="messager_name">Rachel Bearmen</string>
-    <string name="message_preview">Preview of Message Here</string>
 
 
 </resources>

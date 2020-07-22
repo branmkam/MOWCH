@@ -43,10 +43,10 @@ public class RouteInstructionsActivity extends AppCompatActivity {
 
 
         HashMap<String,String> item;
-        for(int i=0;i<StatesAndCapitals.length;i++){
+        for(int i = 0; i< addresses_list.length; i++){
             item = new HashMap<String,String>();
-            item.put( "line1", StatesAndCapitals[i][0]);
-            item.put( "line2", StatesAndCapitals[i][1]);
+            item.put( "line1", addresses_list[i][0]);
+            item.put( "line2", addresses_list[i][1]);
             list.add( item );
         }
 
@@ -69,7 +69,7 @@ public class RouteInstructionsActivity extends AppCompatActivity {
         params.y = 400;
         getWindow().setAttributes(params);
     }
-    private String[][] StatesAndCapitals =
+    private String[][] addresses_list =
             {{"John Smith","3566 Address St"},
                     {"Rachel Bearman","3566 Address St"},{"new name","3566 Address St"},{"new name2","3566 Address St"}
             ,{"Vivek Patel","3566 Address St"},{"John Smith2","3566 Address St"}};

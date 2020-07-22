@@ -4,20 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ListofDrivers">
-    
-    
-    <!--<ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:foregroundGravity="center"
-        android:src="@drawable/logocropped" />-->
+    tools:context=".ListofRoutes">
 
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="315dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/startrectangle"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
+        android:id="@+id/start_screen_recycler_view"
         android:layout_width="match_parent"
-        android:layout_marginTop="103dp"
+        android:layout_marginTop="190dp"
         android:layout_height="match_parent"
         android:background="@color/main"
         android:padding="4dp"
@@ -27,7 +33,6 @@
         />
 
 
-
 </RelativeLayout>
 
-   
+
