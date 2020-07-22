@@ -114,7 +114,7 @@ public class AdminNavigationActivityActivity extends AppCompatActivity implement
         if(menuItem.getItemId() == R.id.nav_settings){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.framlayout, new BlankFragment());
+            fragmentTransaction.replace(R.id.framlayout, new SettingsFragment());
             fragmentTransaction.commit();
             drawerLayout.closeDrawer(GravityCompat.START);
         }

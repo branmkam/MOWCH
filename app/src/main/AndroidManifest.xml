@@ -15,12 +15,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RouteInstructionsActivity"
-            android:theme="@style/AppTheme.CustomPop"/>
-
-        <activity android:name=".RoutePopActivity"
-            android:theme="@style/AppTheme.CustomPop"
-            />
+        <activity android:name=".InstrutionsForRouteActivity"
+            android:theme="@style/AppTheme.CustomPop">
+        </activity>
+        <activity
+            android:name=".NotifyingDriverActivity"
+            android:theme="@style/AppTheme.CustomPop"></activity>
+        <activity
+            android:name=".RouteInstructionsActivity"
+            android:theme="@style/AppTheme.CustomPop" />
+        <activity
+            android:name=".RoutePopActivity"
+            android:theme="@style/AppTheme.CustomPop" />
         <activity
             android:name=".DriversPopActivity"
             android:theme="@style/AppTheme.CustomPop" />
