@@ -1,26 +1,16 @@
 package com.example.mowch;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ListActivity;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.TextView;
-import android.widget.ExpandableListAdapter;
-import android.widget.ExpandableListView;
-import android.widget.Toast;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -49,7 +39,7 @@ public class RouteInstructionsActivity extends AppCompatActivity {
                 finish();
             }
         });
-        listView = (ListView) findViewById(R.id.addresses);
+        listView = (ListView) findViewById(R.id.notifications);
 
 
         HashMap<String,String> item;
@@ -64,7 +54,7 @@ public class RouteInstructionsActivity extends AppCompatActivity {
                 R.layout.addresslist,
                 new String[] { "line1","line2" },
                 new int[] {R.id.listItem, R.id.line_b});
-        ((ListView)findViewById(R.id.addresses)).setAdapter(sa);
+        ((ListView)findViewById(R.id.notifications)).setAdapter(sa);
 
 
         DisplayMetrics displayMetrics = new DisplayMetrics();

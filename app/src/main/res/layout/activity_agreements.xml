@@ -37,37 +37,39 @@
         android:layout_marginTop="700dp"
         android:background="@drawable/l" />-->
 
-    <TextView
-        android:id="@+id/lorem_ipsum"
-        android:layout_width="408dp"
-        android:layout_height="700dp"
-        android:layout_alignParentLeft="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/agreementsshape"
-        android:gravity="bottom"
-        android:text=" "
-        android:textAppearance="@style/lorem_ipsum" />
+ <TextView
+     android:id="@+id/lorem_ipsum"
+     android:layout_width="383dp"
+     android:layout_height="620dp"
+     android:layout_alignParentStart="true"
+     android:layout_alignParentLeft="true"
+     android:layout_centerInParent="true"
+     android:layout_marginStart="13dp"
+     android:layout_marginLeft="13dp"
+     android:layout_marginTop="20dp"
+     android:background="@drawable/agreementsshape"
+     android:gravity="bottom"
+     android:text=" "
+     android:textAppearance="@style/lorem_ipsum" />
 
-    <TextView
-        android:id="@+id/lorem_ipsum2"
-        android:layout_width="308dp"
-        android:layout_height="450dp"
-        android:layout_alignTop="@+id/terms_and_c"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="51dp"
-        android:layout_marginTop="180dp"
-        android:background="@color/white"
-        android:gravity="center_vertical"
-        android:isScrollContainer="true"
-        android:scrollbars="vertical"
-        android:text="@string/lorem_ipsum"
-        android:textAppearance="@style/lorem_ipsum" />
+ <TextView
+     android:id="@+id/lorem_ipsum2"
+     android:layout_width="308dp"
+     android:layout_height="404dp"
+     android:layout_alignTop="@+id/terms_and_c"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:layout_centerInParent="true"
+     android:layout_marginLeft="51dp"
+     android:layout_marginTop="177dp"
+     android:background="@color/white"
+     android:gravity="center_vertical"
+     android:isScrollContainer="true"
+     android:scrollbars="vertical"
+     android:text="@string/lorem_ipsum"
+     android:textAppearance="@style/lorem_ipsum" />
 
-    <TextView
+ <TextView
         android:id="@+id/terms_and_c"
         android:layout_width="400dp"
         android:layout_height="40dp"
@@ -83,39 +85,23 @@
         android:text="Terms and Conditions"
         android:textAppearance="@style/terms_and_c" />
 
-    <Button
-        android:id="@+id/agree"
-        android:layout_width="147dp"
-        android:layout_height="53dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="217dp"
-        android:layout_marginTop="650dp"
-        android:background="@drawable/rectangle2"
-        android:fontFamily="@font/sspsemibold"
-        android:gravity="center|center_vertical"
-        android:text="Agree"
-        android:textAllCaps="false"
-        android:textColor="@color/main"
-        android:textSize="24sp" />
-
-    <Button
-        android:id="@+id/cancel"
-        android:layout_width="147dp"
-        android:layout_height="53dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="22dp"
-        android:layout_marginTop="650dp"
-        android:fontFamily="@font/sspblack"
-        android:gravity="center"
-        android:textSize="18sp"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:text="@string/cancel"
-        android:textAppearance="@style/cancel"
-        android:textColor="@color/main" />
+ <Button
+     android:id="@+id/agree"
+     android:layout_width="wrap_content"
+     android:layout_height="66dp"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:layout_marginLeft="64dp"
+     android:layout_marginTop="596dp"
+     android:background="@drawable/startrectangle"
+     android:clickable="true"
+     android:fontFamily="@font/sspsemibold"
+     android:gravity="center|center_vertical"
+     android:text="Agree"
+     android:textAllCaps="false"
+     android:textColor="@color/main"
+     android:textSize="24sp" />
 
 
 </RelativeLayout>
