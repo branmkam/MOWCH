@@ -46,7 +46,7 @@ public class NotifyingDriverActivity extends AppCompatActivity {
                     public void run() {
                         finish();
                     }
-                }, 350);
+                }, 200);
                 finalSend_button.setVisibility(View.GONE);
                 editText.setVisibility(View.GONE);
                 message.setText(confirm);
