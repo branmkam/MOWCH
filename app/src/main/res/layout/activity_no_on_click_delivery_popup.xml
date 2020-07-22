@@ -43,7 +43,7 @@
         android:layout_height="63dp"
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
-        android:hint="@string/type_here"
+        android:hint="type_here"
         android:inputType="text"
         android:shadowColor="#0B0000"
         android:shadowDx="1.5"
