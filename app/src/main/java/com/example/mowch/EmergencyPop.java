@@ -1,6 +1,7 @@
 package com.example.mowch;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.DisplayMetrics;
@@ -23,6 +24,7 @@ public class EmergencyPop extends AppCompatActivity {
         setContentView(R.layout.pop_emergency);
 
 
+
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 
@@ -36,10 +38,28 @@ public class EmergencyPop extends AppCompatActivity {
         params.y = -60;
         getWindow().setAttributes(params);
 
+        Button pause = (Button) findViewById(R.id.notify);
+        pause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openOtherPopup();
+
+            }
+        });
+
+
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
     }
+
+    private void openOtherPopup() {
+        finish();
+        Intent intent = new Intent(this, DeliveryPopup.class);
+        startActivity(intent);
+    }
+
+
 }

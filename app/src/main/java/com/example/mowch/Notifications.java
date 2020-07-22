@@ -31,13 +31,13 @@ public class Notifications extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications);
 
-        close = (Button) findViewById(R.id.navigation);
+        /*close = (Button) findViewById(R.id.navigation);
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
-        });
+        });*/
         listView = (ListView) findViewById(R.id.notifications);
     }
 }
