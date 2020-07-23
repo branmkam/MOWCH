@@ -52,24 +52,24 @@
      android:text=" "
      android:textAppearance="@style/lorem_ipsum" />
 
- <TextView
-     android:id="@+id/lorem_ipsum2"
-     android:layout_width="308dp"
-     android:layout_height="404dp"
-     android:layout_alignTop="@+id/terms_and_c"
-     android:layout_alignParentLeft="true"
-     android:layout_alignParentTop="true"
-     android:layout_centerInParent="true"
-     android:layout_marginLeft="51dp"
-     android:layout_marginTop="177dp"
-     android:background="@color/white"
-     android:gravity="center_vertical"
-     android:isScrollContainer="true"
-     android:scrollbars="vertical"
-     android:text="@string/lorem_ipsum"
-     android:textAppearance="@style/lorem_ipsum" />
+    <TextView
+        android:id="@+id/lorem_ipsum2"
+        android:layout_width="308dp"
+        android:layout_height="404dp"
+        android:layout_alignTop="@+id/terms_and_c"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="175dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical"
+        android:text="All volunteers are required, as a condition of volunteerism, to sign and abide by the following policy concerning confidential information or activities in connection with the performance of each individual’s service. This policy is binding for allvolunteers. Confidentiality Policy for Employees, Volunteers and Board Members: In the course of the daily activities conducted by Meals on Wheels Orange County, NC, employees and volunteers will be in personal contact with clients. This often necessitates the sharing of private information concerning the recipients. Respecting the privacy of our clients, donors, members, staff, volunteers and of the Meals on Wheels Orange County, NC itself is a basic value of Meals on Wheels Orange County, NC. Employees, volunteers and board members may be exposed to information that is confidential and/or privileged and proprietary in nature. This includes name, address, phone number, living condition/circumstances, income status and physical condition. The services received by clients and other similar information are also strictly confidential. All staff members and volunteers shall guarantee every person that receives the services of Meals on Wheels this right to his/her personal privacy.Personal and financial information is confidential and should not be disclosed or discussed with anyone without permission or authorization from the Executive Director. Care shall also be taken to ensure that unauthorized individuals do not overhear any discussion of confidential information and that documents containing confidential information are not left in the open or inadvertently shared.It is the policy of Meals on Wheels Orange County, NC that such information must bekept confidential both during and after employment or volunteer service. Staff and volunteers, including board members, are expected to return materials containing privileged or confidential information at the time of separation from employment or expiration of service. Unauthorized disclosure of confidential or privileged information is a serious violation of this policy and will subject the person(s) who made the unauthorized disclosure to appropriate discipline, including removal/dismissal.Certification:I have read the Meals on Wheels Orange County, NC policy on confidentiality and the Statement of Confidentiality presented above. I agree to abide by the requirements of the policy and inform my supervisor immediately if I believe any violation (unintentional or otherwise) of the policy has occurred. I understand that violation of this policy will lead to disciplinary action, up to and including termination of my service with Meals on Wheels Orange County, NC."
+        android:textAppearance="@style/lorem_ipsum" />
 
- <TextView
+    <TextView
         android:id="@+id/terms_and_c"
         android:layout_width="400dp"
         android:layout_height="40dp"
@@ -82,7 +82,7 @@
         android:layout_marginTop="110dp"
         android:fontFamily="@font/sspsemibold"
         android:gravity="center_horizontal"
-        android:text="Terms and Conditions"
+        android:text="Recipient Confidentiality"
         android:textAppearance="@style/terms_and_c" />
 
  <Button
