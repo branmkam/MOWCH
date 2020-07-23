@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".DeliveryPopup"
                   android:theme="@style/AppTheme.CustomPop2"></activity>
-        <activity android:name=".Notifications"></activity>
+        <activity android:name=".ui.NOTUSED.Notifications"></activity>
         <activity android:name=".MapProceedActivity"
             android:theme="@style/AppTheme.CustomPop2"></activity>
         <activity android:name=".InstrutionsForRouteActivity"
@@ -49,7 +49,7 @@
         <activity
             android:name=".EmergencyPop"
             android:theme="@style/AppTheme.CustomPop" />
-        <activity android:name=".StartScreenActivity" />
+        <activity android:name=".ui.NOTUSED.StartScreenActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".ForgotPasswordLastActivity" />
         <activity android:name=".ForgotPasswordActivity" />
@@ -60,9 +60,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.loginNOTUSED.LoginActivity"
-            android:label="@string/title_activity_login" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

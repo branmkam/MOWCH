@@ -15,13 +15,13 @@ import android.widget.Button;
 import java.util.ArrayList;
 
 
-public class StartScreen2 extends Fragment {
+public class StartScreenMain extends Fragment {
 
     private RecyclerView mrecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
 
-    public StartScreen2() {
+    public StartScreenMain() {
         // Required empty public constructor
     }
 

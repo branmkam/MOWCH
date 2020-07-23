@@ -4,7 +4,7 @@ import java.util.*;
 public class TestData {
 
     public void createFields() {
-        Admin rb = new Admin("Rachel Bearman", "rachelbearman@cchmow.org", "rAcHeL20";
+        /*Admin rb = new Admin("Rachel Bearman", "rachelbearman@cchmow.org", "rAcHeL20";
 
         Driver d1 = new Driver("Brandon Kaminski", "branmkam@live.unc.edu", "d1pwd", rb);
         Driver d2 = new Driver("John Smith", "johnsmith@example.net", "d2pwd", rb);
@@ -28,7 +28,7 @@ public class TestData {
         rb.assignRoute(d1, r1);
 
         Route r2 = new Route(2);
-        r2.setAddresses(AL2);
+        r2.setAddresses(AL2);*/
     }
 
 }

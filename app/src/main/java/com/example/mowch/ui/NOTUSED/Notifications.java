@@ -1,4 +1,4 @@
-package com.example.mowch;
+package com.example.mowch.ui.NOTUSED;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+
+import com.example.mowch.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,7 +31,7 @@ public class Notifications extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notifications);
+        /*setContentView(R.layout.activity_notifications);*/ // this layout is in the legacy folder
 
         /*close = (Button) findViewById(R.id.navigation);
         close.setOnClickListener(new View.OnClickListener() {
