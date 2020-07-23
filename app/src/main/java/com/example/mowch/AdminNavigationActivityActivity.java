@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
@@ -19,8 +18,6 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.google.android.material.navigation.NavigationView;
-
-import java.util.Objects;
 
 public class AdminNavigationActivityActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     DrawerLayout drawerLayout;
@@ -59,7 +56,7 @@ public class AdminNavigationActivityActivity extends AppCompatActivity implement
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.framlayout, new StartScreen2());
+        fragmentTransaction.add(R.id.framlayout, new StartScreenMain());
         fragmentTransaction.commit();
 
     }
@@ -107,7 +104,7 @@ public class AdminNavigationActivityActivity extends AppCompatActivity implement
         if(menuItem.getItemId() == R.id.nav_home){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.framlayout, new StartScreen2());
+            fragmentTransaction.replace(R.id.framlayout, new StartScreenMain());
             fragmentTransaction.commit();
             drawerLayout.closeDrawer(GravityCompat.START);
         }

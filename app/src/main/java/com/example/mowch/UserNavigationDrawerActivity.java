@@ -51,7 +51,7 @@ public class UserNavigationDrawerActivity extends AppCompatActivity implements N
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.framlayout, new StartScreen2());
+        fragmentTransaction.add(R.id.framlayout, new StartScreenMain());
         fragmentTransaction.commit();
 
 
@@ -86,7 +86,7 @@ public class UserNavigationDrawerActivity extends AppCompatActivity implements N
         if(menuItem.getItemId() == R.id.nav_home){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.framlayout, new StartScreen2());
+            fragmentTransaction.replace(R.id.framlayout, new StartScreenMain());
             fragmentTransaction.commit();
             drawerLayout.closeDrawer(GravityCompat.START);
         }
