@@ -29,9 +29,6 @@ public class TestData {
 
         Route r2 = new Route(2);
         r2.setAddresses(AL2);
-
-        d1.setRoute(r1);
-        d2.setRoute(r2);
     }
 
 }
