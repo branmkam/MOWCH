@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListofRoutes">
+
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="315dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/startrectangle"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/start_screen_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="190dp"
+        android:layout_height="match_parent"
+        android:background="@color/main"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:elevation="4dp"
+
+        />
+
+
+</RelativeLayout>
+
+

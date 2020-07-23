@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+
+
+    <ImageButton
+        android:id="@+id/logobutton"
+        android:layout_width="365dp"
+        android:layout_height="207dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="193dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="280dp"
+        android:fontFamily="@font/sspbold"
+        android:text="Sign Up Here"
+        android:textColor="@color/white"
+        android:textSize="34dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="347dp"
+        android:background="@drawable/input_field2"
+        android:fontFamily="@font/bryantproreg"
+        android:hint="@string/prompt_name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/gray"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="421dp"
+        android:background="@drawable/input_field2"
+        android:ems="10"
+        android:fontFamily="@font/bryantproreg"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/gray"
+        android:textSize="28dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="52dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/user"
+        android:layout_marginTop="361dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="435dp"
+        android:src="@drawable/mail2"/>
+
+
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="495dp"
+        android:background="@drawable/input_field2"
+        android:fontFamily="@font/bryantproreg"
+        android:inputType="textPassword"
+        android:hint="@string/prompt_password"
+        android:textColorHint="@color/gray"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword3"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="569dp"
+        android:background="@drawable/input_field2"
+        android:ems="10"
+        android:fontFamily="@font/bryantproreg"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/gray"
+        android:textSize="28dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/password"
+        android:layout_marginTop="508dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="582dp"
+        android:src="@drawable/password"/>
+
+
+
+    <Button
+        android:id="@+id/signup_button2"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="643dp"
+        android:textAllCaps="false"
+        android:background="@drawable/loginfield"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+
+<!--
+
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="421dp"
+        android:layout_marginEnd="303dp"
+        android:layout_marginRight="303dp"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="193dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="285dp"
+        android:fontFamily="@font/sspbold"
+        android:text="Sign Up Here"
+        android:textColor="@color/white"
+        android:textSize="34dp" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="26dp"
+        android:layout_height="26dp" />
+
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/input_field"
+        android:fontFamily="@font/bryantproreg"
+        android:hint="@string/prompt_email"
+        android:textColorHint="@color/gray"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/editpassword"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:fontFamily="@font/bryantproreg"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/gray"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/editpassword2"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:fontFamily="@font/bryantproreg"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/gray"
+        android:textSize="28dp" />
+
+    <Button
+        android:id="@+id/signuphere"
+        android:layout_width="348dp"
+        android:layout_height="55dp"
+        android:background="@drawable/loginfield"
+        android:gravity="center"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="26dp"
+        android:layout_height="26dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:elevation="4dp" />-->
+
+</RelativeLayout>

@@ -6,4 +6,8 @@
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapsActivity" />
+    android:layout_gravity="bottom"
+    android:id="@+id/map"
+    tools:context=".MapsActivity"
+    android:background="#00000000"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />

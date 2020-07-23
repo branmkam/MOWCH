@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="18dp"
+    app:cardCornerRadius="50dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/route_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="18dp"
+            />
+
+        <TextView
+            android:id="@+id/driver2"
+            android:layout_width="398dp"
+            android:layout_height="84dp"
+            android:textSize="23sp"
+            android:textColor="@color/lightblue"
+            android:fontFamily="@font/sspbold"
+            android:text=""
+            android:gravity="center"
+            />
+
+        <ImageButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/infobutton"
+            android:visibility="gone"
+            android:layout_marginLeft="317dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_outline_info_24" />
+
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:id="@+id/sub_item2"
+            android:layout_width="398dp"
+            android:gravity="center"
+            android:layout_height="205dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/route_info"
+                android:layout_width="398dp"
+                android:layout_height="140dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <ImageButton
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/remove_button2"
+                    android:layout_width="40dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_marginLeft="18dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_outline_remove_circle_outline_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/sspsemibold"
+                    android:textSize="22sp"
+                    android:layout_height="wrap_content"
+                    android:text="John Smith"
+                    android:id="@+id/route_name_current" />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="189dp"
+                android:layout_height="60dp"
+                android:id="@+id/assign_driver"
+                android:background="@drawable/assign"
+                android:text="Assign new driver"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:fontFamily="@font/sspsemibold"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

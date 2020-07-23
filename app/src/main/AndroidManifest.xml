@@ -16,7 +16,53 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".DeliveryPopup"
+                  android:theme="@style/AppTheme.CustomPop2"></activity>
+        <activity android:name=".Notifications"></activity>
+        <activity android:name=".MapProceedActivity"
+            android:theme="@style/AppTheme.CustomPop2"></activity>
+        <activity android:name=".InstrutionsForRouteActivity"
+            android:theme="@style/AppTheme.CustomPop">
+        </activity>
+        <activity android:name=".NoOnClickDeliveryPopup"
+            android:theme="@style/AppTheme.CustomPop2"></activity>
+        <activity
+            android:name=".NotifyDriverActivity"
+            android:theme="@style/AppTheme.CustomPop"></activity>
+        <activity android:name=".PausePop" android:theme="@style/AppTheme.CustomPop2">
 
+        </activity>
+        <activity
+            android:name=".RouteInstructionsActivity"
+            android:theme="@style/AppTheme.CustomPop" />
+        <activity
+            android:name=".RoutePopActivity"
+            android:theme="@style/AppTheme.CustomPop" />
+        <activity
+            android:name=".DriversPopActivity"
+            android:theme="@style/AppTheme.CustomPop" />
+        <activity android:name=".AdminNavigationActivityActivity" />
+        <activity android:name=".AgreementsActivity" />
+        <activity
+            android:name=".UserNavigationDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar2" />
+        <activity
+            android:name=".EmergencyPop"
+            android:theme="@style/AppTheme.CustomPop" />
+        <activity android:name=".StartScreenActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".ForgotPasswordLastActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".LogginginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.loginNOTUSED.LoginActivity"
+            android:label="@string/title_activity_login" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -27,17 +73,11 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyBBitHjLfkH8g_QRbw7BwGKbE9W47sDs8s" />
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:label="@string/title_activity_maps" />
     </application>
 
 </manifest>
