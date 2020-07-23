@@ -5,27 +5,27 @@ public class Driver extends Account {
     private Route route;
     private AdminInterface admin;
 
-    public Driver(String name, int number, String username, String email, String password,
+    public Driver(String name, String email, String password,
                   Route route, AdminInterface admin) {
-        super(name, number, username, email, password);
+        super(name, email, password);
         this.route = route;
         this.admin = admin;
     }
 
-    public Driver(String name, int number, String username, String email, String password) {
-        super(name, number, username, email, password);
+    public Driver(String name, String email, String password) {
+        super(name, email, password);
         this.route = null;
         this.admin = null;
     }
 
-    public Driver(String name, int number, String username, String email, String password, Route route) {
-        super(name, number, username, email, password);
+    public Driver(String name, String email, String password, Route route) {
+        super(name, email, password);
         this.route = route;
         this.admin = null;
     }
 
-    public Driver(String name, int number, String username, String email, String password, AdminInterface admin) {
-        super(name, number, username, email, password);
+    public Driver(String name, String email, String password, AdminInterface admin) {
+        super(name, email, password);
         this.route = null;
         this.admin = admin;
     }

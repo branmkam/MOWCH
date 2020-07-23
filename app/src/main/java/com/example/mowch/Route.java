@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Route {
 
-    private ArrayList<String> addresses;
+    private ArrayList<Address> addresses;
     private int routeNum;
 
     public Route(int routeNum) {
@@ -12,11 +12,11 @@ public class Route {
         addresses = new ArrayList<>();
     }
 
-    public ArrayList<String> getAddresses() {
+    public ArrayList<Address> getAddresses() {
         return addresses;
     }
 
-    public void setAddresses(ArrayList<String> addresses) {
+    public void setAddresses(ArrayList<Address> addresses) {
         this.addresses = addresses;
     }
 
