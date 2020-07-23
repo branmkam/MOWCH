@@ -24,6 +24,7 @@ public class SignupActivity extends AppCompatActivity {
                 openSignUpActivity();
             }
         });
+
     }
 
     /*private void openLoggingInActivity() {

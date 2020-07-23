@@ -33,6 +33,7 @@
         android:background="@drawable/input_field3" />
 
     <Button
+        android:id="@+id/notify"
         android:layout_width="247dp"
         android:layout_height="45dp"
         android:layout_alignParentLeft="true"

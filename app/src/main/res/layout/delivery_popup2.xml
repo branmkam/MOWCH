@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="366dp"
+    android:layout_height="200dp"
+    android:background="@drawable/gray_rect2"
+    android:layout_gravity="start"
+    tools:context=".PausePop">
+
+
+    <TextView
+        android:id="@+id/proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sspsemibold"
+        android:gravity="center_horizontal"
+        android:text="You have reached your delivery"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/confirm_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/sspbold"
+        android:gravity="center_horizontal"
+        android:text="Delivery Successful?"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+
+    <Button
+        android:id="@+id/yes_button"
+        android:layout_width="103dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="105dp"
+        android:background="@drawable/yes_button" />
+
+    <Button
+        android:id="@+id/no_button"
+        android:layout_width="103dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="105dp"
+        android:background="@drawable/no_button" />
+
+
+</RelativeLayout>

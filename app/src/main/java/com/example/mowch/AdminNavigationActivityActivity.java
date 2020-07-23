@@ -122,7 +122,7 @@ public class AdminNavigationActivityActivity extends AppCompatActivity implement
         if(menuItem.getItemId() == R.id.nav_notif){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.framlayout, new ContactFragment());
+            fragmentTransaction.replace(R.id.framlayout, new NotificationsFragment());
             fragmentTransaction.commit();
             drawerLayout.closeDrawer(GravityCompat.START);
         }

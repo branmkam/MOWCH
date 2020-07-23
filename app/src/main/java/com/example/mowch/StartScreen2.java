@@ -1,5 +1,6 @@
 package com.example.mowch;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -28,6 +30,16 @@ public class StartScreen2 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_start_screen2, container, false);
+
+        Button start = (Button) view.findViewById(R.id.start_button);
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(view.getContext(), MapsActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
         ArrayList<ExampleDriver> exampleList = new ArrayList<>();
         exampleList.add(new ExampleDriver(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));

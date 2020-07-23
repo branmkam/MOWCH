@@ -117,6 +117,10 @@
         <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
 
+    <style name="AppTheme.CustomPop2" >
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
 
     <style name="you_have_pa">
 
