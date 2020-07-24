@@ -62,7 +62,7 @@ public class UserNavigationDrawerActivity extends AppCompatActivity implements N
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            drawerLayout.openDrawer(GravityCompat.START);
         }
 
     }
@@ -81,6 +81,8 @@ public class UserNavigationDrawerActivity extends AppCompatActivity implements N
         getWindow().setAttributes(params);
         mydialog.show();
     }
+
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         if(menuItem.getItemId() == R.id.nav_home){
@@ -100,7 +102,7 @@ public class UserNavigationDrawerActivity extends AppCompatActivity implements N
         if(menuItem.getItemId() == R.id.nav_contactAdmin){
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.add(R.id.framlayout, new ContactFragment());
+            fragmentTransaction.replace(R.id.framlayout, new ContactFragment());
             fragmentTransaction.commit();
             drawerLayout.closeDrawer(GravityCompat.START);
         }

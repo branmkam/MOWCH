@@ -34,4 +34,9 @@ TextView textView;
         Intent intent = new Intent(this, UserNavigationDrawerActivity.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }

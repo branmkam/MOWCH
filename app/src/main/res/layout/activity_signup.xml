@@ -34,7 +34,7 @@
         android:textSize="34dp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/name_signup"
         android:layout_width="348dp"
         android:layout_height="55dp"
         android:layout_alignParentLeft="true"
@@ -50,7 +50,7 @@
         android:textSize="28dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/email_signup"
         android:layout_width="348dp"
         android:layout_height="55dp"
         android:layout_alignParentLeft="true"
@@ -89,7 +89,7 @@
 
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/password_signup"
         android:layout_width="348dp"
         android:layout_height="55dp"
         android:layout_alignParentLeft="true"
@@ -105,7 +105,7 @@
         android:textSize="28dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/retype_password_signup"
         android:layout_width="348dp"
         android:layout_height="55dp"
         android:layout_alignParentLeft="true"

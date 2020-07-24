@@ -46,8 +46,7 @@
         <activity android:name=".AdminNavigationActivityActivity" />
         <activity android:name=".AgreementsActivity" />
         <activity
-            android:name=".UserNavigationDrawerActivity"
-            android:theme="@style/AppTheme.NoActionBar2" />
+            android:name=".UserNavigationDrawerActivity" />
         <activity
             android:name=".EmergencyPop"
             android:theme="@style/AppTheme.CustomPop" />
