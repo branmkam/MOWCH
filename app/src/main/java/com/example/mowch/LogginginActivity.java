@@ -1,14 +1,11 @@
 package com.example.mowch;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 
-import com.google.android.material.navigation.NavigationView;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class LogginginActivity extends AppCompatActivity {
 
@@ -41,7 +38,7 @@ public class LogginginActivity extends AppCompatActivity {
         forgotpassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openForgotPasswordActivity();;
+                openForgotPasswordActivity();
             }
         });
 
@@ -60,6 +57,12 @@ public class LogginginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AdminNavigationActivityActivity.class);
         startActivity(intent);
     }
+
+    private void openAPIGetTest() {
+        Intent intent = new Intent(this, APIGetTest.class);
+        startActivity(intent);
+    }
+
 
 
 
