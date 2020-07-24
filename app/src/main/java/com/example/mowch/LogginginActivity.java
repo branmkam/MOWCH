@@ -12,6 +12,7 @@ public class LogginginActivity extends AppCompatActivity {
     Button signup;
     Button login;
     Button forgotpassword;
+    Button brandon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,13 @@ public class LogginginActivity extends AppCompatActivity {
                 openForgotPasswordActivity();
             }
         });
+        brandon = (Button) findViewById(R.id.brandon);
+        brandon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openForgotPasswordActivity();;
+            }
+        });
 
 
         }
@@ -62,6 +70,7 @@ public class LogginginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, APIGetTest.class);
         startActivity(intent);
     }
+
 
 
 
