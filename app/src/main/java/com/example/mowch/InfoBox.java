@@ -1,22 +1,21 @@
 package com.example.mowch;
 
-public class ExampleDriver {
-
+public class InfoBox {
     private int imageResource;
-    private Driver driver;
+    private String driverName;
     private boolean isExpanded;
 
-    public ExampleDriver(int imageResource, Driver driver) {
+    public InfoBox(int imageResource, String driverName) {
         this.imageResource = imageResource;
-        this.driver = driver;
+        this.driverName = driverName;
     }
 
     public int getImageResource() {
         return imageResource;
     }
 
-    public Driver getDriver() {
-        return driver;
+    public String getDriverName() {
+        return driverName;
     }
 
     public boolean isExpanded() {
@@ -31,10 +30,5 @@ public class ExampleDriver {
         this.imageResource = imageResource;
     }
 
-    public void setDriver(Driver driver) { this.driver = driver; }
-
-    public String getDriverName()
-    {
-        return driver.getName();
-    }
+    public void setDriverName(String driverName) { this.driverName = driverName; }
 }

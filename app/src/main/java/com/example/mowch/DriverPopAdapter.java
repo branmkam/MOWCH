@@ -1,6 +1,5 @@
 package com.example.mowch;
 
-import android.app.MediaRouteButton;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +8,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.transition.TransitionManager;
 
 import java.util.ArrayList;
 
@@ -52,7 +50,7 @@ public class DriverPopAdapter extends RecyclerView.Adapter<DriverPopAdapter.Driv
 
         ExampleDriver currentItem = mExampleDriver.get(position);
         holder.imageView.setImageResource(currentItem.getImageResource());   // setting icon
-        holder.textView.setText(currentItem.getDriverName());  // setting name
+        holder.textView.setText(currentItem.getDriver().getName());  // setting name
 
 
         holder.itemView.setOnClickListener(v -> {

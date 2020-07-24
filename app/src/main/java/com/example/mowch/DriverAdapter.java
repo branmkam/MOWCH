@@ -69,7 +69,7 @@ public class DriverAdapter extends RecyclerView.Adapter<DriverAdapter.DriverView
 
         ExampleDriver currentItem = mExampleDriver.get(position);
         holder.imageView.setImageResource(currentItem.getImageResource());   // setting icon
-        holder.textView.setText(currentItem.getDriverName());  // setting name
+        holder.textView.setText(currentItem.getDriver().getName());  // setting name
         holder.sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
