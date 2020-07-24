@@ -48,6 +48,7 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="20sp"
+        android:elevation="4dp"
         android:fontFamily="@font/sspbold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
