@@ -39,6 +39,7 @@ public class NoOnClickDeliveryPopup extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 describe.setText("Thank you!");
+                describe.setY(400);
                 editText.setVisibility(View.GONE);
                 submit.setVisibility(View.GONE);
 
@@ -50,10 +51,6 @@ public class NoOnClickDeliveryPopup extends AppCompatActivity {
                 }, 200);
             }
         });
-
-
-
-
 
     }
 

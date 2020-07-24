@@ -66,7 +66,7 @@ public class AdminNavigationActivityActivity extends AppCompatActivity implement
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            drawerLayout.openDrawer(GravityCompat.START);
         }
 
     }
