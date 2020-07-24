@@ -41,16 +41,16 @@ public class StartScreenMain extends Fragment {
             }
         });
 
-        ArrayList<ExampleDriver> exampleList = new ArrayList<>();
-        exampleList.add(new ExampleDriver(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
-        exampleList.add(new ExampleDriver(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
-        exampleList.add(new ExampleDriver(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
-        exampleList.add(new ExampleDriver(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
-        exampleList.add(new ExampleDriver(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
-        exampleList.add(new ExampleDriver(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
-        exampleList.add(new ExampleDriver(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
-        exampleList.add(new ExampleDriver(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
-        exampleList.add(new ExampleDriver(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
+        ArrayList<InfoBox> exampleList = new ArrayList<>();
+        exampleList.add(new InfoBox(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
+        exampleList.add(new InfoBox(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
+        exampleList.add(new InfoBox(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
+        exampleList.add(new InfoBox(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
+        exampleList.add(new InfoBox(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
+        exampleList.add(new InfoBox(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
+        exampleList.add(new InfoBox(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
+        exampleList.add(new InfoBox(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
+        exampleList.add(new InfoBox(R.drawable.ic_outline_home_24, "123 H Street \nCarrboro, NC\n27232"));
 
 
         mrecyclerView = view.findViewById(R.id.start_screen_recycler_view);

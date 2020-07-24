@@ -8,19 +8,31 @@ public class HeadAdmin extends Account implements AdminInterface {
     private ArrayList<Driver> drivers;
     private ArrayList<Account> pending;
 
-    public HeadAdmin(String name, String email, String password) {
+    //singleton
+    private static HeadAdmin single_instance = new HeadAdmin("Rachel Bearman", "rbearman@cchmow.org", "testPass");
+
+    //SINGLETON METHOD
+    public static HeadAdmin getInstance() {
+        if (single_instance != null) {
+            return single_instance;
+        } else {
+            return new HeadAdmin("Rachel Bearman", "rbearman@cchmow.org", "testPass");
+        }
+    }
+
+    private HeadAdmin(String name, String email, String password) {
         super(name, email, password);
         this.accounts = new ArrayList<>();
         this.pending = new ArrayList<>();
     }
 
-    public HeadAdmin(String name, String email, String password, ArrayList<Account> accounts) {
+    private HeadAdmin(String name, String email, String password, ArrayList<Account> accounts) {
             super(name, email, password);
         this.accounts = accounts;
         this.pending = new ArrayList<>();
     }
 
-    public HeadAdmin(String name, String email, String password,
+    private HeadAdmin(String name, String email, String password,
                      ArrayList<Account> accounts, ArrayList<Account> pending) {
         super(name, email, password);
         this.accounts = accounts;
@@ -107,4 +119,15 @@ public class HeadAdmin extends Account implements AdminInterface {
         }
     }
 
+    public ArrayList<Account> getAccounts() {
+        return accounts;
+    }
+
+    public ArrayList<Driver> getDrivers() {
+        return drivers;
+    }
+
+    public ArrayList<Account> getPending() {
+        return pending;
+    }
 }

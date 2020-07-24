@@ -2,7 +2,6 @@ package com.example.mowch;
 
 import android.content.Context;
 import android.content.Intent;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,13 +9,15 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 
 public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHolder>{
     
-    private ArrayList<ExampleDriver> mExampleRoute; // ExampleDriver can be used
+    private ArrayList<InfoBox> mExampleRoute; // InfoBox can be used
 
     int mExpandedPosition = -1;
     public static class RouteViewHolder extends RecyclerView.ViewHolder {
@@ -37,7 +38,7 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
             assignDriver = itemView.findViewById(R.id.assign_driver);
         }
 
-        public void bind(ExampleDriver driver) {
+        public void bind(InfoBox driver) {
             boolean expanded = driver.isExpanded();
             // Set the visibility based on state
 
@@ -54,8 +55,8 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
         }
     }
 
-    public RouteAdapter(ArrayList<ExampleDriver> exampleDriver){
-        mExampleRoute = exampleDriver;
+    public RouteAdapter(ArrayList<InfoBox> infoBox){
+        mExampleRoute = infoBox;
     }
     @NonNull
     @Override
@@ -68,7 +69,7 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
     @Override
     public void onBindViewHolder(@NonNull RouteAdapter.RouteViewHolder holder, int position) {
 
-        ExampleDriver currentItem = mExampleRoute.get(position);
+        InfoBox currentItem = mExampleRoute.get(position);
         holder.imageView.setImageResource(currentItem.getImageResource());   // setting icon
         holder.textView.setText(currentItem.getDriverName());  // setting name
         holder.infoButton.setOnClickListener(new View.OnClickListener() {

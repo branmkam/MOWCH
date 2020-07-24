@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class StartScreenAdapter extends RecyclerView.Adapter<StartScreenAdapter.StartScreenViewHolder>{
 
-    private ArrayList<ExampleDriver> mExampleStart;
+    private ArrayList<InfoBox> mExampleStart;
 
     public static class StartScreenViewHolder extends RecyclerView.ViewHolder {
         public ImageView imageView;
@@ -32,8 +32,8 @@ public class StartScreenAdapter extends RecyclerView.Adapter<StartScreenAdapter.
 
     }
 
-    public StartScreenAdapter(ArrayList<ExampleDriver> exampleDriver){
-        mExampleStart = exampleDriver;
+    public StartScreenAdapter(ArrayList<InfoBox> infoBox){
+        mExampleStart = infoBox;
     }
 
     @NonNull
@@ -46,7 +46,7 @@ public class StartScreenAdapter extends RecyclerView.Adapter<StartScreenAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull StartScreenAdapter.StartScreenViewHolder holder, int position) {
-        ExampleDriver currentItem = mExampleStart.get(position);
+        InfoBox currentItem = mExampleStart.get(position);
         holder.imageView.setImageResource(currentItem.getImageResource());   // setting icon
         holder.textView.setText(currentItem.getDriverName());  // setting name
         holder.infoButton.setOnClickListener(new View.OnClickListener() {
