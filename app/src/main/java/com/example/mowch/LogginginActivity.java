@@ -46,7 +46,7 @@ public class LogginginActivity extends AppCompatActivity {
         brandon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openForgotPasswordActivity();;
+                openAPIGetTest();
             }
         });
 
