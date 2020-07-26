@@ -35,15 +35,15 @@
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="63dp"
-        android:layout_height="75dp"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.461"
-        app:srcCompat="@drawable/user" />
+        app:srcCompat="@drawable/mail2" />
 
     <ImageView
         android:id="@+id/imageView16"
@@ -99,7 +99,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.744"
-        app:srcCompat="@drawable/notifications" />
+        app:srcCompat="@drawable/ic_baseline_notifications_24" />
 
     <Button
         android:id="@+id/button20"

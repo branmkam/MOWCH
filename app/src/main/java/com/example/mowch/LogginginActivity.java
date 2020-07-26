@@ -18,7 +18,6 @@ public class LogginginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loggingin);
-
         signup = (Button) findViewById(R.id.signup_button);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +62,8 @@ public class LogginginActivity extends AppCompatActivity {
     }
     private void openStartScreenActivity() {
         Intent intent = new Intent(this, AdminNavigationActivityActivity.class);
+
+
         startActivity(intent);
     }
 

@@ -23,6 +23,7 @@ public class HeadAdmin extends Account implements AdminInterface {
     private HeadAdmin(String name, String email, String password) {
         super(name, email, password);
         this.accounts = new ArrayList<>();
+        this.drivers = new ArrayList<>();
         this.pending = new ArrayList<>();
     }
 
