@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mowch">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -13,27 +12,30 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/circle_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/circle_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DeliveryPopup"
-                  android:theme="@style/AppTheme.CustomPop2"></activity>
-        <activity android:name=".ui.NOTUSED.Notifications"></activity>
-        <activity android:name=".MapProceedActivity"
-            android:theme="@style/AppTheme.CustomPop2"></activity>
-        <activity android:name=".InstrutionsForRouteActivity"
-            android:theme="@style/AppTheme.CustomPop">
-        </activity>
-        <activity android:name=".NoOnClickDeliveryPopup"
-            android:theme="@style/AppTheme.CustomPop2"></activity>
+        <activity
+            android:name=".DeliveryPopup"
+            android:theme="@style/AppTheme.CustomPop2" />
+        <activity android:name=".ui.NOTUSED.Notifications" />
+        <activity
+            android:name=".MapProceedActivity"
+            android:theme="@style/AppTheme.CustomPop2" />
+        <activity
+            android:name=".InstrutionsForRouteActivity"
+            android:theme="@style/AppTheme.CustomPop"></activity>
+        <activity
+            android:name=".NoOnClickDeliveryPopup"
+            android:theme="@style/AppTheme.CustomPop2" />
         <activity
             android:name=".NotifyDriverActivity"
-            android:theme="@style/AppTheme.CustomPop"></activity>
-        <activity android:name=".PausePop" android:theme="@style/AppTheme.CustomPop2">
-
-        </activity>
+            android:theme="@style/AppTheme.CustomPop" />
+        <activity
+            android:name=".PausePop"
+            android:theme="@style/AppTheme.CustomPop2"></activity>
         <activity
             android:name=".RouteInstructionsActivity"
             android:theme="@style/AppTheme.CustomPop" />
@@ -45,8 +47,7 @@
             android:theme="@style/AppTheme.CustomPop" />
         <activity android:name=".AdminNavigationActivityActivity" />
         <activity android:name=".AgreementsActivity" />
-        <activity
-            android:name=".UserNavigationDrawerActivity" />
+        <activity android:name=".UserNavigationDrawerActivity" />
         <activity
             android:name=".EmergencyPop"
             android:theme="@style/AppTheme.CustomPop" />
