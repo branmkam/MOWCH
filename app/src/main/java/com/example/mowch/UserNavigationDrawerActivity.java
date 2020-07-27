@@ -16,6 +16,7 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -26,12 +27,17 @@ public class UserNavigationDrawerActivity extends AppCompatActivity implements N
     NavigationView navigationView;
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
+    String fullName;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
+        Intent intent = getIntent();
+        fullName = intent.getStringExtra("full_name");
+        TextView name = findViewById(R.id.name_on_header_nav);
+        name.setText(fullName);
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

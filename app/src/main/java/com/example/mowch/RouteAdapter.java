@@ -1,7 +1,9 @@
 package com.example.mowch;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +13,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -27,7 +32,7 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
         public ImageButton infoButton;
         public ImageButton removeDriver;
         public Button assignDriver;
-
+        public TextView driverName;
 
         public RouteViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -36,20 +41,45 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
             infoButton = itemView.findViewById(R.id.infobutton);
             removeDriver = itemView.findViewById(R.id.remove_button2);
             assignDriver = itemView.findViewById(R.id.assign_driver);
+            driverName = itemView.findViewById(R.id.route_name_current);
         }
 
+        @SuppressLint("ResourceAsColor")
         public void bind(InfoBox driver) {
             boolean expanded = driver.isExpanded();
+            boolean assigned = driver.isAssigned();
             // Set the visibility based on state
 
             View button2 = itemView.findViewById(R.id.infobutton);
+            View removeDriver2 = itemView.findViewById(R.id.remove_button2);
+            TextView driverName2 = itemView.findViewById(R.id.route_name_current);
+
             if(expanded) {
                 button2.setVisibility(View.VISIBLE); // make it appear when it is clicked on
             }
             if(!expanded) {
                 button2.setVisibility(View.GONE); // make it disappear when it is closed out
             }
+
+            if(assigned) {
+                textView.setTextColor(R.color.lightblue);
+                removeDriver2.setVisibility(View.VISIBLE); // make it appear when it is clicked on
+                driverName2.setText("John Smith");
+            }
+            if(!assigned) {
+                textView.setTextColor(R.color.black);
+                removeDriver2.setVisibility(View.INVISIBLE); // make it disappear when it is closed out
+                driverName2.setText("No driver selected");
+            }
+
             View subItem = itemView.findViewById(R.id.sub_item2);
+            int textColor = driverName.getCurrentTextColor();
+            if(textColor > R.color.lightblue){
+                driverName.setTextColor(R.color.lightblue);
+            } else {
+                driverName.setTextColor(R.color.black);
+            }
+
             subItem.setVisibility(expanded ? View.VISIBLE : View.GONE);
 
         }
@@ -82,11 +112,13 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
         });
 
         holder.removeDriver.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View v) {
-                /*Context h = v.getContext();
-                Intent intent = new Intent(h, EmergencyPop.class);
-                h.startActivity(intent);*/
+                holder.removeDriver.setVisibility(View.INVISIBLE);
+                holder.driverName.setText("No driver assigned");
+                holder.textView.setTextColor(R.color.black);
+                currentItem.setAssigned(false);
             }
         });
 
@@ -96,6 +128,9 @@ public class RouteAdapter extends RecyclerView.Adapter<RouteAdapter.RouteViewHol
                 Context h = v.getContext();
                 Intent intent = new Intent(h, DriversPopActivity.class);
                 h.startActivity(intent);
+                currentItem.setAssigned(true);
+                holder.bind(currentItem);
+
             }
         });
 

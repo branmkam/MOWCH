@@ -57,6 +57,7 @@ public class LogginginActivity extends AppCompatActivity {
 
     private void openSignUpActivity() {
         Intent intent = new Intent(this, SignupActivity.class);
+
         startActivity(intent);
     }
     private void openStartScreenActivity() {

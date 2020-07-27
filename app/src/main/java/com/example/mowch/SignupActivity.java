@@ -14,6 +14,7 @@ import android.widget.ImageButton;
 public class SignupActivity extends AppCompatActivity {
 
     Button signup;
+    EditText name;
 
     Boolean enabled = false;
 
@@ -22,7 +23,7 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         signup = (Button) findViewById(R.id.signup_button2);
-        EditText name = (EditText) findViewById(R.id.name_signup);
+        name = (EditText) findViewById(R.id.name_signup);
         EditText email = (EditText) findViewById(R.id.email_signup);
         EditText pass = (EditText) findViewById(R.id.password_signup);
         EditText repass = (EditText) findViewById(R.id.retype_password_signup);
@@ -35,9 +36,9 @@ public class SignupActivity extends AppCompatActivity {
                     email.setError("Please put a valid email");
                 } else if (pass.getText().length() < 6){
                     pass.setError("Password must be atleast 6 characters");
-                } else if (!repass.getText().equals(pass.getText())){
-                    repass.setError("Passwords must match");
-                } else {
+                } /*else if (!repass.getText().equals(pass.getText())){
+                    //repass.setError("Passwords must match");
+                }*/ else {
                     openSignUpActivity();
                 }
             }
@@ -79,7 +80,9 @@ public class SignupActivity extends AppCompatActivity {
         startActivity(intent);
     }*/
     private void openSignUpActivity() {
+            String fullName = name.getText().toString();
             Intent intent = new Intent(this, AgreementsActivity.class);
+            intent.putExtra("full_name", fullName);
             startActivity(intent);
     }
     boolean isEmailValid(CharSequence email) {
