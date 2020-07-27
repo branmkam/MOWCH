@@ -17,6 +17,7 @@
         android:roundIcon="@drawable/circle_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ChangingEmailSettings"></activity>
         <activity
             android:name=".DeliveryPopup"
             android:theme="@style/AppTheme.CustomPop2" />
@@ -26,7 +27,7 @@
             android:theme="@style/AppTheme.CustomPop2" />
         <activity
             android:name=".InstrutionsForRouteActivity"
-            android:theme="@style/AppTheme.CustomPop"></activity>
+            android:theme="@style/AppTheme.CustomPop" />
         <activity
             android:name=".NoOnClickDeliveryPopup"
             android:theme="@style/AppTheme.CustomPop2" />
@@ -35,7 +36,7 @@
             android:theme="@style/AppTheme.CustomPop" />
         <activity
             android:name=".PausePop"
-            android:theme="@style/AppTheme.CustomPop2"></activity>
+            android:theme="@style/AppTheme.CustomPop2" />
         <activity
             android:name=".RouteInstructionsActivity"
             android:theme="@style/AppTheme.CustomPop" />
@@ -62,7 +63,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".APIGetTest"></activity>
+        <activity android:name=".APIGetTest" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
