@@ -57,8 +57,6 @@ public class EmergencyPop extends AppCompatActivity {
 
     private void openOtherPopup() {
         finish();
-        Intent intent = new Intent(this, DeliveryPopup.class);
-        startActivity(intent);
     }
 
 
