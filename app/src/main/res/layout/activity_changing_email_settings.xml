@@ -3,43 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".ChangingEmailSettings">
 
     <RelativeLayout
-        android:layout_width="395dp"
-        android:layout_height="421dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_width="360dp"
+        android:layout_height="465dp"
         android:background="@drawable/gray_rect2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29">
+        app:layout_constraintVertical_bias="0.0">
 
         <EditText
-            android:id="@+id/editText8"
-            android:layout_width="182dp"
-            android:layout_height="47dp"
-            android:layout_alignParentLeft="true"
+            android:id="@+id/editTextTextEmailAddress2"
+            android:layout_width="227dp"
+            android:layout_height="52dp"
             android:layout_alignParentTop="true"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="203dp"
-            android:layout_marginTop="212dp"
-            android:background="@drawable/input_field3"
-            android:gravity="top"
-            android:hint="Type New Email" />
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="269dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginRight="71dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint=" Type New Email"
+            android:inputType="textEmailAddress" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/confirmchange"
             android:layout_width="279dp"
             android:layout_height="66dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="64dp"
-            android:layout_marginLeft="64dp"
-            android:layout_marginBottom="19dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="22dp"
             android:background="@drawable/green_button"
             android:text="Confirm Change Email"
             android:textSize="22sp" />
@@ -66,24 +66,24 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="113dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="76dp"
             android:text="Current Email:"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/change_password"
             android:layout_width="238dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="73dp"
-            android:layout_marginLeft="73dp"
-            android:layout_marginTop="11dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="-5dp"
             android:gravity="center_horizontal"
             android:text="Change Email"
             android:textAlignment="center"
@@ -93,16 +93,17 @@
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
+            android:layout_width="227dp"
+            android:layout_height="52dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="111dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginTop="133dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginRight="71dp"
             android:background="@color/white"
             android:ems="10"
-            android:inputType="textEmailAddress" />
+            android:inputType="none|textEmailAddress"
+            android:text=" (Email)" />
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
