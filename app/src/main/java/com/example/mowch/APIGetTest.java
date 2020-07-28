@@ -29,6 +29,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
+
 public class APIGetTest extends AppCompatActivity {
 
     //final TextView textView = new TextView(this);
@@ -97,7 +98,7 @@ public class APIGetTest extends AppCompatActivity {
             }) {
                 @Override
                 public String getBodyContentType() {
-                    return "application/json; charset=utf-8";
+                    return "application/json";
                 }
 
                 @Override
