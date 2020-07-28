@@ -30,9 +30,9 @@ public class ListofRoutes extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_listof_routes, container, false);
 
         ArrayList<InfoBox> exampleList = new ArrayList<>();
-        exampleList.add(new InfoBox(R.drawable.ic_outline_map_24, "Route 1"));
-        exampleList.add(new InfoBox(R.drawable.ic_outline_map_24,"Route 2"));
-        exampleList.add(new InfoBox(R.drawable.ic_outline_map_24,"Route 3"));
+        exampleList.add(new InfoBox(R.drawable.ic_outline_map_24, "Route A"));
+        exampleList.add(new InfoBox(R.drawable.ic_outline_map_24,"Route B"));
+        exampleList.add(new InfoBox(R.drawable.ic_outline_map_24,"Route C"));
 
         mrecyclerView = view.findViewById(R.id.recycler_view2);
         mrecyclerView.setHasFixedSize(false); // list size is bound to change

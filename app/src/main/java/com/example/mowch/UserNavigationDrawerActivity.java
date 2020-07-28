@@ -14,8 +14,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -26,12 +28,16 @@ public class UserNavigationDrawerActivity extends AppCompatActivity implements N
     NavigationView navigationView;
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
+    String fullName;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
+        Intent intent = getIntent();
+        fullName = intent.getStringExtra("full_name2");
+
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -48,6 +54,9 @@ public class UserNavigationDrawerActivity extends AppCompatActivity implements N
         actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
         actionBarDrawerToggle.syncState();
 
+        View header = navigationView.getHeaderView(0);
+        TextView textView = (TextView) header.findViewById(R.id.name_on_header_nav); // sets name as your signed up name
+        textView.setText(fullName);
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();

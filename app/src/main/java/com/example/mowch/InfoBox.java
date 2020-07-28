@@ -4,6 +4,7 @@ public class InfoBox {
     private int imageResource;
     private String driverName;
     private boolean isExpanded;
+    private boolean assigned;
 
     public InfoBox(int imageResource, String driverName) {
         this.imageResource = imageResource;
@@ -31,4 +32,12 @@ public class InfoBox {
     }
 
     public void setDriverName(String driverName) { this.driverName = driverName; }
+
+    public boolean isAssigned() {
+        return assigned;
+    }
+
+    public void setAssigned(boolean assigned) {
+        this.assigned = assigned;
+    }
 }

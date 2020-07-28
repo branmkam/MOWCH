@@ -8,8 +8,6 @@
     android:orientation="vertical"
     tools:context=".SignupActivity">
 
-
-
     <ImageButton
         android:id="@+id/logobutton"
         android:layout_width="365dp"
