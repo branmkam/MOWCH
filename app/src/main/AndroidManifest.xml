@@ -72,6 +72,12 @@
         <activity
             android:name=".EmergencyPop"
             android:theme="@style/AppTheme.CustomPop" />
+        <activity
+            android:name=".ChangingEmailSettings"
+            android:theme="@style/AppTheme.CustomPop" />
+        <activity
+            android:name=".ChangingPasswordPop"
+            android:theme="@style/AppTheme.CustomPop" />
         <activity android:name=".ui.NOTUSED.StartScreenActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".ForgotPasswordLastActivity" />
