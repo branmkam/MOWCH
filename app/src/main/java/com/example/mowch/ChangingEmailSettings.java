@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -36,27 +37,14 @@ public class ChangingEmailSettings extends AppCompatActivity {
         params.y = 0;
         getWindow().setAttributes(params);
 
-        Button pause = (Button) findViewById(R.id.confirmchange);
-        pause.setOnClickListener(new View.OnClickListener() {
+        Button change = (Button) findViewById(R.id.confirmchange);
+        change.setOnClickListener(new OnClickListener() {
+
+
             @Override
             public void onClick(View v) {
-                openOtherPopup();
-
+                finish();
             }
         });
-
-
     }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-    }
-
-    private void openOtherPopup() {
-        finish();
-        Intent intent = new Intent(this, SettingsFragment.class);
-        startActivity(intent);
-    }
-    //TO DO: After clicking confirm, the app crashes back to log in screen
 }

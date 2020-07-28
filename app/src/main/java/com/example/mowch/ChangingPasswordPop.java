@@ -36,7 +36,7 @@ public class ChangingPasswordPop extends AppCompatActivity {
         pause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openOtherPopup();
+                finish();
 
             }
         });
@@ -49,11 +49,6 @@ public class ChangingPasswordPop extends AppCompatActivity {
         super.onBackPressed();
     }
 
-    private void openOtherPopup() {
-        finish();
-        Intent intent = new Intent(this, SettingsFragment.class);
-        startActivity(intent);
-    }
 
-    //TO DO: After clicking confirm, the app crashes back to log in screen
+
 }
