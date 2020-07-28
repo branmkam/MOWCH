@@ -28,7 +28,7 @@
             android:layout_marginTop="159dp"
             android:background="@drawable/input_field3"
             android:gravity="top"
-            android:hint="message body"
+            android:hint="(Message Body)"
             android:textSize="25sp" />
 
         <Button

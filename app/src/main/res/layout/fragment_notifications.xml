@@ -44,25 +44,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />-->
 
-    <ListView
-        android:id="@+id/notifications"
-        style="@android:style/Widget.DeviceDefault.ExpandableListView"
-        android:layout_width="406dp"
-        android:layout_height="496dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:background="#FFFFFF"
-        android:divider="@color/main"
-        android:dividerHeight="0.9dp"
-        android:fastScrollAlwaysVisible="true"
-        android:footerDividersEnabled="true"
-        android:headerDividersEnabled="true"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view2"
+        android:layout_width="405dp"
+        android:layout_height="493dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/main"
+        android:elevation="4dp"
+        android:padding="4dp"
         android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.995" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

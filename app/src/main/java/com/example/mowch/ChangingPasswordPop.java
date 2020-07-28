@@ -54,4 +54,6 @@ public class ChangingPasswordPop extends AppCompatActivity {
         Intent intent = new Intent(this, SettingsFragment.class);
         startActivity(intent);
     }
+
+    //TO DO: After clicking confirm, the app crashes back to log in screen
 }

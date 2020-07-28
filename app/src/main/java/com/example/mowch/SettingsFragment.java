@@ -43,6 +43,9 @@ public class SettingsFragment extends Fragment {
 
         });
 
+        Button notifs = (Button) view.findViewById(R.id.switch2);
+        // TO DO: program turning on/off push notifications
+
 
         return view;
     }
