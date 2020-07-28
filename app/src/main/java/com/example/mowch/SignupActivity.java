@@ -36,9 +36,9 @@ public class SignupActivity extends AppCompatActivity {
                     email.setError("Please put a valid email");
                 } else if (pass.getText().length() < 6){
                     pass.setError("Password must be atleast 6 characters");
-                } /*else if (!repass.getText().equals(pass.getText())){
-                    //repass.setError("Passwords must match");
-                }*/ else {
+                } else if (!(repass.getText().toString().equals(pass.getText().toString()))){
+                    repass.setError("Must match password");
+                } else {
                     openSignUpActivity();
                 }
             }
