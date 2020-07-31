@@ -16,12 +16,17 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class NotificationAdapter extends AppCompatActivity {
+public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.NotificationsViewHolder> {
 
     private ArrayList<InfoBox> mNotifications; // InfoBox can be used
 
     int mExpandedPosition = -1;
-    public static class RouteViewHolder extends RecyclerView.ViewHolder {
+
+    public NotificationAdapter(ArrayList<InfoBox> mExampleList) {
+        mNotifications = mExampleList;
+    }
+
+    public static class NotificationsViewHolder extends RecyclerView.ViewHolder {
 
         public ImageView imageView;
         public TextView textView;
@@ -30,7 +35,7 @@ public class NotificationAdapter extends AppCompatActivity {
 //        public Button assignDriver;
 
 
-        public RouteViewHolder(@NonNull View itemView) {
+        public NotificationsViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.notifications);
             textView = itemView.findViewById(R.id.driver2);
@@ -43,15 +48,8 @@ public class NotificationAdapter extends AppCompatActivity {
             boolean expanded = driver.isExpanded();
             // Set the visibility based on state
 
-            View button2 = itemView.findViewById(R.id.infobutton);
-            if(expanded) {
-                button2.setVisibility(View.VISIBLE); // make it appear when it is clicked on
-            }
-            if(!expanded) {
-                button2.setVisibility(View.GONE); // make it disappear when it is closed out
-            }
-            View subItem = itemView.findViewById(R.id.sub_item2);
-            subItem.setVisibility(expanded ? View.VISIBLE : View.GONE);
+            /*View subItem = itemView.findViewById(R.id.sub_item2);
+            subItem.setVisibility(expanded ? View.VISIBLE : View.GONE);*/
 
         }
     }
@@ -62,17 +60,17 @@ public class NotificationAdapter extends AppCompatActivity {
     @NonNull
 
 
-    public NotificationAdapter.RouteViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public NotificationAdapter.NotificationsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.routecardview, parent, false);
-        NotificationAdapter.RouteViewHolder evh = new NotificationAdapter.RouteViewHolder(v);
+        NotificationAdapter.NotificationsViewHolder evh = new NotificationAdapter.NotificationsViewHolder(v);
         return evh;
     }
 
 
-    public void onBindViewHolder(@NonNull RouteAdapter.RouteViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull NotificationAdapter.NotificationsViewHolder holder, int position) {
 
         InfoBox currentItem = mNotifications.get(position);
-        holder.imageView.setImageResource(currentItem.getImageResource());   // setting icon
+       /* holder.imageView.setImageResource(currentItem.getImageResource());   // setting icon
         holder.textView.setText(currentItem.getDriverName());  // setting name
         holder.infoButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,9 +84,9 @@ public class NotificationAdapter extends AppCompatActivity {
         holder.removeDriver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Context h = v.getContext();
+                *//*Context h = v.getContext();
                 Intent intent = new Intent(h, EmergencyPop.class);
-                h.startActivity(intent);*/
+                h.startActivity(intent);*//*
             }
         });
 
@@ -99,7 +97,7 @@ public class NotificationAdapter extends AppCompatActivity {
                 Intent intent = new Intent(h, DriversPopActivity.class);
                 h.startActivity(intent);
             }
-        });
+        });*/
 
         holder.itemView.setOnClickListener(v -> {
             // Get the current state of the item
@@ -116,7 +114,7 @@ public class NotificationAdapter extends AppCompatActivity {
         holder.bind(currentItem);
 
 
-        /*final boolean isExpanded = position==mExpandedPosition;
+       /* final boolean isExpanded = position==mExpandedPosition;
         holder.itemView.setActivated(isExpanded);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,10 +126,6 @@ public class NotificationAdapter extends AppCompatActivity {
 
 
     }
-
-    private void notifyItemChanged(int position) {
-    }
-
 
     public int getItemCount() {
         return mNotifications.size();

@@ -39,7 +39,7 @@ public class NotificationsFragment extends Fragment {
         mrecyclerView = view.findViewById(R.id.recycler_view2);
         mrecyclerView.setHasFixedSize(false); // list size is bound to change
         layoutManager = new LinearLayoutManager(view.getContext());
-        mAdapter = new RouteAdapter(mExampleList);
+        mAdapter = new NotificationAdapter(mExampleList);
         mrecyclerView.setLayoutManager(layoutManager);
         mrecyclerView.setAdapter(mAdapter);
 

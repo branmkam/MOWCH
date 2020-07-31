@@ -6,6 +6,7 @@ public class Route {
 
     private ArrayList<Address> addresses;
     private int routeNum;
+    private Driver driverAssigned;
 
     public Route(int routeNum) {
         this.routeNum = routeNum;
@@ -27,4 +28,13 @@ public class Route {
     public void setRouteNum(int routeNum) {
         this.routeNum = routeNum;
     }
+
+    public Driver getDriverAssigned() {
+        return driverAssigned;
+    }
+
+    public void setDriverAssigned(Driver driverAssigned) {
+        this.driverAssigned = driverAssigned;
+    }
+
 }
