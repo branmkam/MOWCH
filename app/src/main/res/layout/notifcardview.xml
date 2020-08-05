@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="3dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/notif_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="33dp"
+            android:paddingLeft="18dp"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/driver3"
+            android:layout_width="398dp"
+            android:layout_height="84dp"
+            android:paddingLeft="52dp"
+            android:textSize="23sp"
+            android:textColor="@color/lightblue"
+            android:fontFamily="@font/sspbold"
+            android:text=""
+            android:gravity="center_vertical"
+            />
+
+        <ImageButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/infobutton"
+            android:visibility="gone"
+            android:layout_marginLeft="317dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_outline_info_24" />
+
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:id="@+id/sub_item3"
+            android:layout_width="398dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bryantproreg"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:id="@+id/notifications_text"
+                android:text="@string/sample_notif"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
