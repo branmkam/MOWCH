@@ -32,9 +32,9 @@ public class NotificationsFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_notifications, container, false);
 
         ArrayList<InfoBox> mExampleList = new ArrayList<>();
-        mExampleList.add(new InfoBox(R.drawable.ellipse_new, "Message 1"));
-        mExampleList.add(new InfoBox(R.drawable.ellipse_new, "Message 2"));
-        mExampleList.add(new InfoBox(R.drawable.ellipse_new, "Message 3"));
+        mExampleList.add(new InfoBox(R.drawable.notifications_new_havent_read, "Message 1"));
+        mExampleList.add(new InfoBox(R.drawable.notifications_new_havent_read, "Message 2"));
+        mExampleList.add(new InfoBox(R.drawable.notifications_new_havent_read, "Message 3"));
 
         // Make sure when you are adding notifcations to add it to index 0 since you want the most recent ones to be on top
 

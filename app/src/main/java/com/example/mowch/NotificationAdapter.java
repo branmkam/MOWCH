@@ -41,8 +41,16 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
 
         public void bind(InfoBox driver) {
             boolean expanded = driver.isExpanded();
+            boolean read = driver.isRead();
             // Set the visibility based on state
-
+            if(expanded) {
+                imageView.setImageResource(R.drawable.notifications_read);
+                driver.setRead(true);
+            }
+            if(read) {
+                imageView.setImageResource(R.drawable.notifications_read);
+                driver.setRead(true);
+            }
             View subItem = itemView.findViewById(R.id.sub_item3);
             subItem.setVisibility(expanded ? View.VISIBLE : View.GONE);
 

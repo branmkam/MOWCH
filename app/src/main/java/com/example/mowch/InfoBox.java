@@ -5,10 +5,12 @@ public class InfoBox {
     private String driverName;
     private boolean isExpanded;
     private boolean assigned;
+    private boolean read;
 
     public InfoBox(int imageResource, String driverName) {
         this.imageResource = imageResource;
         this.driverName = driverName;
+        read = false;
     }
 
     public int getImageResource() {
@@ -39,5 +41,13 @@ public class InfoBox {
 
     public void setAssigned(boolean assigned) {
         this.assigned = assigned;
+    }
+
+    public boolean isRead() {
+        return read;
+    }
+
+    public void setRead(boolean read) {
+        this.read = read;
     }
 }
