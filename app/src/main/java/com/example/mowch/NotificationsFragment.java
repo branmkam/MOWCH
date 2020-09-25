@@ -32,17 +32,18 @@ public class NotificationsFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_notifications, container, false);
 
         ArrayList<InfoBox> mExampleList = new ArrayList<>();
-        mExampleList.add(new InfoBox(R.drawable.ic_baseline_notifications_24, "Message 1"));
-        mExampleList.add(new InfoBox(R.drawable.ic_baseline_notifications_24, "Message 2"));
-        mExampleList.add(new InfoBox(R.drawable.ic_baseline_notifications_24, "Message 3"));
+        mExampleList.add(new InfoBox(R.drawable.notifications_new_havent_read, "Message 1"));
+        mExampleList.add(new InfoBox(R.drawable.notifications_new_havent_read, "Message 2"));
+        mExampleList.add(new InfoBox(R.drawable.notifications_new_havent_read, "Message 3"));
 
-        mrecyclerView = view.findViewById(R.id.recycler_view2);
+        // Make sure when you are adding notifcations to add it to index 0 since you want the most recent ones to be on top
+
+        mrecyclerView = view.findViewById(R.id.recycler_view_notif);
         mrecyclerView.setHasFixedSize(false); // list size is bound to change
         layoutManager = new LinearLayoutManager(view.getContext());
-        mAdapter = new RouteAdapter(mExampleList);
+        mAdapter = new NotificationAdapter(mExampleList);
         mrecyclerView.setLayoutManager(layoutManager);
         mrecyclerView.setAdapter(mAdapter);
-
         return view;
     }
 
