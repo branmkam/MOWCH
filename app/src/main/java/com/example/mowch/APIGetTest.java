@@ -17,7 +17,6 @@ import com.android.volley.toolbox.DiskBasedCache;
 import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.JsonObjectRequest;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -38,81 +37,19 @@ public class APIGetTest extends AppCompatActivity {
         JSONObject json1 = null;
         RequestQueue requestQueue;
 
-        // Instantiate the cache
-        public void initQueue() {
-            Cache cache = new DiskBasedCache(getCacheDir(), 1024 * 1024); // 1MB cap
-
-            // Set up the network to use HttpURLConnection as the HTTP client.
-            Network network = new BasicNetwork(new HurlStack());
-
-            // Instantiate the RequestQueue with the cache and network.
-            requestQueue = new RequestQueue(cache, network);
-
-            // Start the queue
-            requestQueue.start();
-        }
-
-    public void getJSONRequest(String url) {
-        final JSONObject[] toReturn = {null};
-
-        // Formulate the request and handle the response.
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,
-                url,
-                null,
-                new Response.Listener<JSONObject>() {
-                    public void onResponse(JSONObject response) {
-                        System.out.println(response.toString().substring(0,100));
-//                        toReturn[0] = response;
-                        json1 = response;
-                        try {
-                            JSONArray data = json1.getJSONArray("data");
-                            for(int i = 0; i < data.length(); i++)
-                            {
-                                JSONObject fieldData = data.getJSONObject(i);
-                                System.out.println(fieldData.getString("Name_Full_c"));
-                            }
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                System.out.println(error.toString());
-            }
-        }) {
-            @Override
-            public String getBodyContentType() {
-                return "application/json";
-            }
-
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                HashMap<String, String> headers = new HashMap<String, String>();
-                try {
-                    String auth = "Bearer " + token;
-                    headers.put("Authorization", auth);
-                    headers.put("Content-type","application/json");
-                    headers.put("Accept","application/json");
-                    return headers;
-                }
-                catch (Exception e)
-                {
-                    System.out.println("Authentication Failure");
-                    e.printStackTrace();
-                }
-                return headers;
-            }
-        };
-
-        // Add the request to the RequestQueue.
-        requestQueue.add(jsonObjectRequest);
-//        return toReturn[0];
-    }
-
     public void getToken()
     {
-        if (requestQueue == null) { initQueue(); }
+        Cache cache3 = new DiskBasedCache(getCacheDir(), 1024 * 1024); // 1MB cap
+
+        // Set up the network to use HttpURLConnection as the HTTP client.
+        Network network3 = new BasicNetwork(new HurlStack());
+
+        // Instantiate the RequestQueue with the cache and network.
+        RequestQueue requestQueue3 = new RequestQueue(cache3, network3);
+
+        // Start the queue
+        requestQueue3.start();
+
         String url = "https://" + server + "/fmi/data/vLatest/databases/" + file + "/sessions";
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, null, new Response.Listener<JSONObject>() {
                 public void onResponse(JSONObject response) {
@@ -154,18 +91,19 @@ public class APIGetTest extends AppCompatActivity {
             };
     //query delivery day, loop through each id _find?ID=int
         //portal data in DRN
-            requestQueue.add(jsonObjectRequest);
+            requestQueue3.add(jsonObjectRequest);
     }
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         getToken();
-        getJSONRequest("https://" + server + "/fmi/data/vLatest/databases/" + file + "/layouts/" + layout + "/records");
+     //   getJSONRequest("https://" + server + "/fmi/data/vLatest/databases/" + file + "/layouts/" + layout + "/records");
     }
 
 
-    //for later
-   // @Override
+
+//    for later
+//    @Override
 //                public byte[] getBody() throws AuthFailureError {
 //                    try {
 //                        return requestBody == null ? null : requestBody.getBytes("utf-8");
@@ -174,7 +112,7 @@ public class APIGetTest extends AppCompatActivity {
 //                        return null;
 //                    }
 //                }
-
+//
 //                @Override
 //                protected Response<String> parseNetworkResponse(NetworkResponse response) {
 //                    String responseString = "";

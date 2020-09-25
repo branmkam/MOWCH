@@ -45,7 +45,7 @@ public class LogginginActivity extends AppCompatActivity {
         brandon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openAPIGetTest();
+                openAPIGetData();
             }
         });
 
@@ -72,6 +72,10 @@ public class LogginginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void openAPIGetData() {
+        Intent intent = new Intent(this, APIGetData.class);
+        startActivity(intent);
+    }
 
 
 
